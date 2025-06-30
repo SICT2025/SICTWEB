@@ -1,0 +1,101 @@
+.transporte-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+    color: #2c3e50;
+  }
+  
+  .transporte-title {
+    color: #1e5b4f;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Patria_Light';
+  }
+  
+  .transporte-divider {
+    height: 2px;
+    background-color: #962247;
+    border: none;
+    margin: 1rem 0 2rem;
+  }
+  
+  .transporte-section h2,
+  .transporte-section h3 {
+    color: #161a1d;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    font-family: 'Patria_Regular';
+  }
+  
+  .transporte-section ul,
+  .transporte-section ol {
+    color: #161a1d;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: 'NotoSans_Condensed-Thin'; 
+ }
+  
+  .transporte-table {
+    width: 100%;
+    color: #161a1d;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-family: 'NotoSans_ExtraCondensed-Black';
+
+  }
+  
+  .transporte-table th,
+  .transporte-table td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: left;
+  }
+  
+  .cat {
+    font-weight: bold;
+    background-color: #ecf0f1;
+        font-family: 'NotoSans_ExtraCondensed-Black';
+
+    
+  }
+  
+  .document-list li {
+    color: #161a1d;
+    margin-bottom: 0.75rem;
+        font-family: 'NotoSans_ExtraCondensed-Black';
+
+  }
+  
+  .transporte-footer {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .transporte-button {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .transporte-button:hover {
+    background-color: #611232;
+  }
+
+  .transporte-container {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  background: #fff;              /* Fondo blanco */
+  border-radius: 18px;           /* Bordes redondeados */
+  box-shadow: 0 4px 24px 0 rgba(44, 62, 80, 0.10); /* Sombra suave */
+}
+
+  

@@ -1,0 +1,71 @@
+.organigrama-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  .organigrama-title {
+    color: #1e5b4f;
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Patria_Light';
+  }
+  
+  .organigrama-divider {
+    height: 2px;
+    background: linear-gradient(to right, transparent, #611232, transparent);
+    border: none;
+    margin: 1rem 0 2rem;
+  }
+  
+  .organigrama-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .organigrama-image {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+  }
+  
+  .organigrama-description {
+    font-size: 1.5rem;
+    color: #161a1d;
+    font-family: 'NotoSans_ExtraCondensed-Black';
+  }
+  
+  .organigrama-footer {
+    margin-top: 2rem;
+  }
+  
+  .organigrama-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2d98da;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .organigrama-button:hover {
+    background-color: #2271b3;
+  }
+  
+  .organigrama-container {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  background: #fff;              /* Fondo blanco */
+  border-radius: 18px;           /* Bordes redondeados */
+  box-shadow: 0 4px 24px 0 rgba(44, 62, 80, 0.10); /* Sombra suave */
+}

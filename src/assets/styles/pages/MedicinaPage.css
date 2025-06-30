@@ -1,0 +1,73 @@
+.medicina-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .medicina-title {
+    color: #2c3e50;
+    font-size: 40px;
+    margin: 10px 0;
+    font-family: 'Patria_Light';
+  }
+  
+  .medicina-subtitle {
+    color: #161a1d;
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: 'Patria_Regular';
+  }
+  
+  .medicina-list {
+    color: #161a1d;
+    text-align: left;
+    margin: 20px auto;
+    max-width: 800px;
+    line-height: 1.6;
+    font-family: 'NotoSans_Condensed-Thin';
+  }
+  
+  .medicina-note {
+    color: #611232;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: 'NotoSans_ExtraCondensed-Black';
+  }
+  
+  .medicina-subtext {
+    color: #611232;
+    margin-top: 10px;
+    font-family: 'NotoSans_ExtraCondensed-Black';
+  }
+  
+  .medicina-footer {
+    margin-top: 40px;
+  }
+  
+  .btnI {
+    background-color: #0074d9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .btnI:hover {
+    background-color: #005fa3;
+  }
+
+  .medicina-container {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  background: #fff;              /* Fondo blanco */
+  border-radius: 18px;           /* Bordes redondeados */
+  box-shadow: 0 4px 24px 0 rgba(44, 62, 80, 0.10); /* Sombra suave */
+}
+
+  

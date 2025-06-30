@@ -1,0 +1,154 @@
+.accessibility-menu {
+  position: fixed;
+  top: 70px;
+  left: 12px;
+  z-index: 2100;
+  background: #ededed;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  padding: 18px 10px;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 80vh;         /* Limita la altura al 80% de la ventana */
+  overflow-y: auto;         /* Habilita el scroll vertical */
+  padding-right: 8px;       /* Espacio para la barra de scroll */
+}
+
+/* Personaliza la barra de scroll (Webkit browsers) */
+.accessibility-menu::-webkit-scrollbar {
+  width: 8px;
+  background: #f5f5f5;
+}
+
+.accessibility-menu::-webkit-scrollbar-thumb {
+  background: #611232;      /* Guinda */
+  border-radius: 4px;
+}
+
+.accessibility-menu::-webkit-scrollbar-thumb:hover {
+  background: #611232;      /* Guinda más oscuro al pasar el mouse */
+}
+
+.accessibility-btn {
+  display: flex;
+  align-items: center;
+  background: #e2b8c6;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin: 0;
+  font-size: 1.1rem;
+  color: #611232;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+  transition: background 0.2s, color 0.2s, transform 0.1s;
+  width: 100%;
+  text-align: left;
+  gap: 18px;
+}
+
+.accessibility-btn:hover,
+.accessibility-btn:focus {
+  background: #611232;
+  color: #fff;
+  outline: none;
+}
+
+.accessibility-btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d48ca2;
+  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+  font-size: 2rem;
+}
+
+.accessibility-btn-text {
+  flex: 1;
+  font-size: 1.05rem;
+  color: inherit;
+  font-weight: 500;
+  word-break: break-word;
+}
+
+/* Botón especial para restablecer */
+.accessibility-btn.reset {
+  background: #611232;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.accessibility-btn.reset:hover,
+.accessibility-btn.reset:focus {
+  background: #611232;
+  color: #fff;
+}
+
+.font-size-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.font-size-btn {
+  background: #a57f2a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+}
+
+.font-size-btn:hover,
+.font-size-btn:focus {
+  background: #ffd700;
+  color: #611232; 
+  outline: none;
+}
+
+/* Estilos para los controles del lector de pantalla */
+.screen-reader-controls {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.screen-reader-controls button {
+  background: #e2b8c6;
+  color: #611232;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+}
+
+.screen-reader-controls button[aria-pressed="true"],
+.screen-reader-controls button.active {
+  background: #611232;
+  color: #fff;
+}
+
+.screen-reader-controls button:hover,
+.screen-reader-controls button:focus {
+  background: #611232;
+  color: #fff;
+  outline: none;
+}

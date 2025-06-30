@@ -1,0 +1,74 @@
+.obras-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+  }
+  
+  .obras-title {
+    color: #1e5b4f;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Patria_Light';
+  }
+  
+  .obras-divider {
+    height: 2px;
+    background: linear-gradient(to right, transparent, #611232, transparent);
+    border: none;
+    margin: 1rem 0 2rem;
+  }
+  
+  .obras-section h2,
+  .obras-section h3 {
+    color: #161a1d;
+    margin-top: 1.5rem;
+    font-family: 'Patria_Regular';
+  }
+  
+  .obras-section ul {
+    padding-left: 1.5rem;
+    list-style-type: disc;
+    margin-bottom: 1rem;
+    font-family: 'NotoSans_Condensed-Thin';
+  }
+  
+  .obras-section p {
+    margin: 1rem 0;
+    line-height: 1.6;
+    font-family: 'NotoSans_ExtraCondensed-Black';
+  }
+  
+  .obras-footer {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .obras-button {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .obras-button:hover {
+    background-color: #1e8449;
+  }
+
+  .obras-container {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  background: #fff;              /* Fondo blanco */
+  border-radius: 18px;           /* Bordes redondeados */
+  box-shadow: 0 4px 24px 0 rgba(44, 62, 80, 0.10); /* Sombra suave */
+}
+
+  

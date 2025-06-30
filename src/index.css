@@ -1,0 +1,70 @@
+/* src/index.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    margin: 0.5em 0;
+}
+
+ul {
+    padding-left: 1.5em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 1em 0;
+}
+
+footer {
+    margin-top: 2em;
+    padding: 1em;
+    background: #ddd;
+    text-align: center;
+}
+
+/* Accesibilidad */
+
+/* Escala de grises */
+.grayscale {
+    filter: grayscale(1) !important;
+}
+
+/* Alto contraste */
+.high-contrast {
+    background: #000 !important;
+    color: #fff !important;
+}
+.high-contrast a { color: #ffd700 !important; }
+
+/* Cursor grande */
+.big-cursor, .big-cursor * {
+    cursor: url('https://cdn.jsdelivr.net/gh/GoogleChromeLabs/accessibility-developer-tools/gen/cursors/big-cursor.png'), pointer !important;
+}
+
+/* Fuente dislexia */
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url('https://cdn.jsdelivr.net/npm/open-dyslexic@1.0.0/woff/OpenDyslexic-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.dyslexia-font {
+  font-family: 'OpenDyslexic', Arial, sans-serif !important;
+}
+
+/* Espaciado vertical */
+.line-spacing {
+    line-height: 2 !important;
+}

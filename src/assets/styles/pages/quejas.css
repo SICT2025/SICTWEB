@@ -1,0 +1,24 @@
+.buzon-root {
+  font-family: 'NotoSans_Condensed-Thin';
+}
+
+.buzon-title {
+  color: #1e5b4f;
+  font-family: 'Patria_Light';
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.buzon-subtitle {
+  font-family: 'Patria_Regular';
+  color: #1e5b4f;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-size: 1.3rem;
+}
+
+.buzon-body {
+  color:black;
+  font-family: 'NotoSans_Condensed-Thin';
+  font-size: 1rem;
+}

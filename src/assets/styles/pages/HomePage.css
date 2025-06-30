@@ -1,0 +1,105 @@
+.home-bg {
+  background: #e6d194;
+  min-height: 100vh;
+   /* Quita el padding inferior */
+  display: flex;
+  flex-direction: column; /* Asegura que los hijos se apilen verticalmente */
+  justify-content: flex-start;
+  flex: 1 1 auto;
+}
+ 
+.home-main-card {
+  background: #fff;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  padding: 40px 40px 32px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+/* Asegúrate de que html y body no tengan margen ni padding */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #e6d194;
+}
+.home-header-row {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e6d194;
+  padding: 0;
+}
+
+/* Imagen centrada y responsiva, sin recortes ni deformaciones */
+.header-logos-comunicaciones {
+  width: 100%;
+  max-width: 1024px;
+  min-width: 320px;
+  height: auto;
+  aspect-ratio: 1024 / 219;
+  display: block;
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
+  background: #e6d194;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  transition: box-shadow 0.2s;
+}
+
+.home-header-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;}
+ 
+.home-comunicaciones-logo {
+  height: 36px;
+}
+ 
+.home-comunicaciones-text {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.3rem;
+  color: #611232;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+ 
+.home-title {
+  font-size: 2rem;
+  color: #1e5b4f;
+  text-align: center;
+  margin: 18px 0 10px 0;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: 'Patria Light';
+}
+ 
+.home-divider {
+  border: none;
+  border-top: 3px solid #611232;
+  width: 90%;
+  margin: 18px 0 24px 0;
+}
+ 
+.home-description {
+  color: #222;
+  font-size: 1.1rem;
+  text-align: justify;
+  margin-bottom: 32px;
+  line-height: 1.7;
+  font-family: 'NotoSans_Condensed-Thin';
+  
+}
+ 
+.home-image {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin-top: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}

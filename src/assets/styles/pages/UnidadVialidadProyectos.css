@@ -1,0 +1,74 @@
+.unidad-vialidad-proyectos-page {
+  max-width: 650px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.10), 0 1.5px 6px 0 rgba(0,0,0,0.08);
+  padding: 32px 28px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.unidad-vialidad-proyectos-page .img {
+  width: 110px;
+  height: auto;
+  margin-bottom: 18px;
+}
+
+.unidad-vialidad-proyectos-page .abajo {
+  margin-bottom: 8px;
+  color:  #1e5b4f;
+  font-family: 'Patria_Light';
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.unidad-vialidad-proyectos-page hr {
+  width: 80%;
+  border: none;
+  border-top: 2px solid #8a0047;
+  margin: 18px 0 18px 0;
+}
+
+.unidad-vialidad-proyectos-page h2 {
+  color: #161a1d;
+  font-family: 'Patria_Regular';
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.unidad-vialidad-proyectos-page ul {
+  margin-bottom: 24px;
+  padding-left: 20px;
+  font-size: 1.08rem;
+}
+
+.unidad-vialidad-proyectos-page li {
+  color: black;
+  font-family: 'NotoSans_Condensed-Thin';
+  margin-bottom: 10px;
+}
+
+.unidad-vialidad-proyectos-page footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.unidad-vialidad-proyectos-page .btnI {
+  background: #8a0047;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 28px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.unidad-vialidad-proyectos-page .btnI:hover {
+  background: #005072;
+}

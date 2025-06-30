@@ -1,0 +1,85 @@
+.footer-gob {
+  background: #611232;
+  color: #fff;
+  width: 100%;
+  margin-top: 40px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  position: relative;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 40px 32px 24px 32px;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  flex: 1 1 220px;
+  min-width: 200px;
+  margin: 0 16px;
+}
+
+.logo-col {
+  flex: 1 1 260px;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-escudo {
+  width: 300px;
+  margin-bottom: 8px;
+}
+
+
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 6px;
+}
+
+.footer-col ul li a,
+.footer-col p a {
+  color: #fff;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.footer-col ul li a:hover,
+.footer-col p a:hover {
+  color: #ffd700;
+}
+
+.footer-desc {
+  font-size: 0.98rem;
+  margin-bottom: 10px;
+}
+
+.footer-pattern {
+  width: 100%;
+  height: 40px;
+  background: url('https://framework-gb.cdn.gob.mx/landing/img/pleca.svg') repeat-x center;
+  margin-top: 24px;
+}
+
+@media (max-width: 900px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px 16px 16px 16px;
+  }
+  .footer-col, .logo-col {
+    margin-bottom: 24px;
+    margin-right: 0;
+  }
+}

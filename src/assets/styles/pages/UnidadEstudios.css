@@ -1,0 +1,74 @@
+.unidad-estudios-page {
+  max-width: 650px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.10), 0 1.5px 6px 0 rgba(0,0,0,0.08);
+  padding: 32px 28px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.unidad-estudios-page .img {
+  width: 110px;
+  height: auto;
+  margin-bottom: 18px;
+}
+
+.unidad-estudios-page .abajo {
+  font-family: 'Patria_Light';
+  margin-bottom: 8px;
+  color: #1e5b4f;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.unidad-estudios-page hr {
+  width: 80%;
+  border: none;
+  border-top: 2px solid #8a0047;
+  margin: 18px 0 18px 0;
+}
+
+.unidad-estudios-page h2 {
+  color: black;
+  font-family: 'Patria_Regular';
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.unidad-estudios-page ul {
+  margin-bottom: 24px;
+  padding-left: 20px;
+  font-size: 1.08rem;
+}
+
+.unidad-estudios-page li {
+  color:black;
+  font-family: 'NotoSans_Condensed-Thin';
+  margin-bottom: 10px;
+}
+
+.unidad-estudios-page footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.unidad-estudios-page .btnI {
+  background: #8a0047;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 28px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.unidad-estudios-page .btnI:hover {
+  background: #005072;
+}
