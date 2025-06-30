@@ -3,7 +3,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/styles/pages/ServTecnPage.css';
-import img1 from '../assets/imagenes/img1.png';
+
 
 function ServTecnPage() {
   return (

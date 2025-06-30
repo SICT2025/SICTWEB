@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/styles/pages/HomePage.css';
-import logos from '../assets/imagenes/logos.png';
+
 import centro from '../assets/imagenes/centro.PNG';
 
 function HomePage() {

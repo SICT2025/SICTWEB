@@ -5,14 +5,14 @@ import './AccessibilityMenu.css';
 
 function AccessibilityMenu() {
   const {
-    grayscale, setGrayscale,
-    highContrast, setHighContrast,
-    bigCursor, setBigCursor,
-    dyslexiaFont, setDyslexiaFont,
-    lineSpacing, setLineSpacing,
-    readingMask, setReadingMask,
-    readingGuide, setReadingGuide,
-    fontSize, increaseFontSize, decreaseFontSize,
+    setGrayscale,
+    setHighContrast,
+    setBigCursor,
+    setDyslexiaFont,
+    setLineSpacing,
+     setReadingMask,
+     setReadingGuide,
+     increaseFontSize, decreaseFontSize,
     resetAll
   } = useAccessibility();
 

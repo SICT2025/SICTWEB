@@ -2,8 +2,11 @@ import React from 'react';
 import './Footer.css';
 import escudo from '../assets/imagenes/escudo-gob.png';
 import footerPattern from '../assets/imagenes/escudogob.png'; // Asegúrate de que la ruta sea correcta
- 
+
 function Footer() {
+  /**
+   * Componente Footer que muestra información institucional, contacto y un patrón decorativo.
+   */
   return (
     <footer className="footer-gob">
       <div className="footer-content">
@@ -14,10 +17,15 @@ function Footer() {
         <div className="footer-col">
           <h4>Secretaría de Infraestructura, Comunicaciones y Transportes </h4>
           <p className="footer-desc">
-            Modulo Unico de información y atención al cliente del Centro SICT Guanajuato. <a href="#"></a>
+            Modulo Unico de información y atención al cliente del Centro SICT Guanajuato. 
+            <button type="button" className="link-style" aria-label="Información">Información</button>
           </p>
           <ul>
-            <li><a href="#">2025 Todos los Derechos Reservados.</a></li>
+            <li>
+              <button type="button" className="link-style" aria-label="Derechos reservados 2025">
+                2025 Todos los Derechos Reservados.
+              </button>
+            </li>
           </ul>
         </div>
         <div className="footer-col">
@@ -42,5 +50,5 @@ function Footer() {
     </footer>
   );
 }
- 
+
 export default Footer;

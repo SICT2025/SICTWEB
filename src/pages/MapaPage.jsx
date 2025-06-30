@@ -1,6 +1,5 @@
 import React from 'react';
 import '../assets/styles/pages/MapaPage.css';
-import img1 from '../assets/imagenes/img1.png';
 import croquis from '../assets/imagenes/croquis.jpg';
 
 function MapaPage() {

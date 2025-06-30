@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/styles/pages/SubAdmPage.css';
-import img1 from '../assets/imagenes/img1.png';
-import { useNavigate } from 'react-router-dom';
+
 
 function SubAdmPage() {
   return (

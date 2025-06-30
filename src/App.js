@@ -34,11 +34,6 @@ import ComunicacionSocialPage from './pages/ComunicacionSocialPage';
 function App() {
   // No se aplican clases aquí, se aplican en el <body> desde el contexto
   const {
-    grayscale,
-    highContrast,
-    bigCursor,
-    dyslexiaFont,
-    lineSpacing,
     readingMask,
     readingGuide,
   } = useAccessibility();
