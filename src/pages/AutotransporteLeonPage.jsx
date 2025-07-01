@@ -4,7 +4,7 @@ import '../assets/styles/pages/RecursosFinancierosPage.css'; // Puedes reutiliza
 function AutotransporteLeonPage() {
   return (
     <div className="recursos-financieros-container">
-      <h1 className="abajo">Departamento de autotransporte federal "León"</h1>
+      <h1 className="abajo">Departamento de Autotransporte Federal "León"</h1>
       {/* Agrega aquí más contenido si lo necesitas */}
     </div>
   );

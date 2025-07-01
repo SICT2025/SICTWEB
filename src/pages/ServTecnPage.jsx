@@ -55,13 +55,13 @@ function ServTecnPage() {
       </h2>
       <ul className="servtecn-subareas">
         <li>
-          <Link to="/unidad-laboratorios">Unidad de laboratorios</Link>
+          <Link to="/unidad-laboratorios">Unidad de Laboratorios</Link>
         </li>
         <li>
-          <Link to="/unidad-estudios">Unidad de estudios</Link>
+          <Link to="/unidad-estudios">Unidad de Estudios</Link>
         </li>
         <li>
-          <Link to="/unidad-vialidad-proyectos">Unidad de vialidad y proyectos</Link>
+          <Link to="/unidad-vialidad-proyectos">Unidad de Vialidad y Proyectos</Link>
         </li>
       </ul>
 

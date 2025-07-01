@@ -9,7 +9,7 @@ function DepartamentoHumanosPage() {
   return (
     <div className="recursos-financieros-container">
       <img className="img" src={logo} alt="Logo SICT" />
-      <h1 className="abajo">Departamento de recursos humanos</h1>
+      <h1 className="abajo">Departamento de Recursos Humanos</h1>
       <hr />
       <h2>Funciones del departamento:</h2>
       <ul>

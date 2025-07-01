@@ -30,6 +30,7 @@ import BuzonQuejas from './pages/BuzonQuejas';
 import ConsultaEstatusQueja from './pages/ConsultaEstatusQueja';
 import FolioGenerado from './pages/FolioGenerado';
 import ComunicacionSocialPage from './pages/ComunicacionSocialPage';
+import responsive from '../src/assets/styles/pages/responsive.css'; 
  
 function App() {
   // No se aplican clases aquí, se aplican en el <body> desde el contexto

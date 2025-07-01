@@ -17,7 +17,7 @@ function Footer() {
         <div className="footer-col">
           <h4>Secretaría de Infraestructura, Comunicaciones y Transportes </h4>
           <p className="footer-desc">
-            Modulo Unico de información y atención al cliente del Centro SICT Guanajuato. 
+            Módulo Único de Información y Atención al Cliente del Centro SICT Guanajuato. 
             <button type="button" className="link-style" aria-label="Información">Información</button>
           </p>
           <ul>

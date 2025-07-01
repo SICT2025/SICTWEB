@@ -18,9 +18,9 @@ function JuridicoPage() {
       
       <section className="juridico-section">
         <h2 className="juridico-subtitle">
-          Las facultades y/o atribuciones de las Unidades Jurídicas están conferidas
-          en el Acuerdo Secretarial publicado en el Diario Oficial de la federación el
-          1ro de noviembre de 1984:
+          Las facultades y/o atribuciones de las Unidades Jurídicas están conferidas  
+          en el Acuerdo Secretarial publicado en el Diario Oficial de la Federación el  
+          1 de noviembre de 1984
         </h2>
 
         <ul className="juridico-list">

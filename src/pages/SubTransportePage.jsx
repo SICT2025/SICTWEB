@@ -17,22 +17,22 @@ function SubTransporte() {
         <ul>
           <li>
             <Link to="/transporte-ferroviario">
-              Departamento de transporte ferroviario
+              Departamento de Transporte Ferroviario
             </Link>
           </li>
           <li>
             <Link to="/autotransporte-celaya">
-              Departamento de autotransporte federal "Celaya"
+              Departamento de Autotransporte Federal "Celaya"
             </Link>
           </li>
           <li>
             <Link to="/autotransporte-leon">
-              Departamento de autotransporte federal "León"
+              Departamento de Autotransporte Federal "León"
             </Link>
           </li>
           <li>
             <Link to="/medicina">
-              Unidad de protección y medicina preventiva
+              Unidad de Protección y Medicina Preventiva
             </Link>
           </li>
         </ul>
