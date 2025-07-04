@@ -7,7 +7,7 @@ function JuridicoPage() {
     "Denuncias ante la Fiscalía General de la República sobre daños a las vías de comunicación",
     "Revisión de contratos de obra pública y validación de fianzas",
     "Seguimiento de asuntos jurisdiccionales (amparos, agrarios, laboral, penal, administrativos)",
-    "Procedimientos administrativos instaurados por el Centro SCT",
+    "Procedimientos administrativos instaurados por el Centro SICT",
     "Revisión documental para liberación del derecho de vía"
   ];
 

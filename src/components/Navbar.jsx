@@ -34,8 +34,8 @@ function Navbar() {
               <li><Link to="/subcomunicaciones">Subdirección de Comunicaciones</Link></li>
               <li><Link to="/subadministracion">Subdirección de Administración</Link></li>
               <li><Link to="/organigrama">Organigrama</Link></li>
-              <li><Link to="/buzon-quejas">Buzón de Quejas y Sugerencias</Link></li>
               <Link to="/comunicacion-social">Comunicación Social</Link>
+              <li><Link to="/buzon-quejas">Buzón de Quejas y Sugerencias</Link></li>
             </ul>
           )}
         </li>
