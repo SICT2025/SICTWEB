@@ -12,7 +12,7 @@ const ConsultaEstatusQueja = () => {
     setError(null);
     try {
       // Cambia la URL por la del backend real si es necesario
-      const res = await fetch(`http://localhost:3001/api/quejas/${folio}`);
+      const res = await fetch(`https://api-quejas.onrender.com/api/quejas/${folio}`);
       if (res.ok) {
         const data = await res.json();
         setEstatus(data.estatus);
