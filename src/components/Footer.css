@@ -87,7 +87,7 @@
 .link-style {
   background: none;
   border: none;
-  color: blue;
+  color: rgb(253, 253, 255);
   text-decoration: underline;
   cursor: pointer;
   padding: 0;
