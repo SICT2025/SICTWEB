@@ -12,7 +12,7 @@ export default function BuzonQuejas() {
     e.preventDefault();
     setEnviando(true);
     try {
-      const res = await fetch('http://localhost:3001/api/quejas', {
+      const res = await fetch('https://api-quejas.onrender.com/api/quejas', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ tipo, texto })
