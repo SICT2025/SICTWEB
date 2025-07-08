@@ -1,71 +1,150 @@
 .organigrama-container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    color: #2c3e50;
-  }
-  
-  .organigrama-title {
-    color: #1e5b4f;
-    font-size: 3.5rem;
-    margin-bottom: 0.5rem;
-    font-family: 'Patria_Light';
-  }
-  
-  .organigrama-divider {
-    height: 2px;
-    background: linear-gradient(to right, transparent, #611232, transparent);
-    border: none;
-    margin: 1rem 0 2rem;
-  }
-  
-  .organigrama-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .organigrama-image {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    margin-bottom: 1rem;
-  }
-  
-  .organigrama-description {
-    font-size: 1.5rem;
-    color: #161a1d;
-    font-family: 'NotoSans_ExtraCondensed-Black';
-  }
-  
-  .organigrama-footer {
-    margin-top: 2rem;
-  }
-  
-  .organigrama-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #2d98da;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: background 0.3s;
-  }
-  
-  .organigrama-button:hover {
-    background-color: #2271b3;
-  }
-  
-  .organigrama-container {
   max-width: 960px;
   margin: 2rem auto;
   padding: 2rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #2c3e50;
-  background: #fff;              /* Fondo blanco */
-  border-radius: 18px;           /* Bordes redondeados */
-  box-shadow: 0 4px 24px 0 rgba(44, 62, 80, 0.10); /* Sombra suave */
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 rgba(44, 62, 80, 0.10);
+}
+
+.organigrama-title {
+  color: #1e5b4f;
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Patria_Light';
+}
+
+
+.organigrama-divider {
+  height: 2px;
+  background: linear-gradient(to right, transparent, #611232, transparent);
+  border: none;
+  margin: 1rem 0 2rem;
+}
+
+.organigrama-content {
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 0;
+}
+
+/* Scroll personalizado */
+.organigrama-content::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.organigrama-content::-webkit-scrollbar-track {
+  background: #9b2247;
+}
+
+.organigrama-content::-webkit-scrollbar-thumb {
+  background-color: #611232;
+  border-radius: 20px;
+  border: 3px solid #9b2247;
+}
+
+/* NUEVO: contenedor que se escala */
+.organigrama-zoom-target {
+  transform-origin: top left;
+  transition: transform 0.2s;
+  display: inline-block; /* Para que respete el tamaño y scroll funcione */
+}
+
+.organigrama-image {
+  width: 100%;
+  max-width: 1200px;
+  min-width: 600px;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+  background: #fff;
+  object-fit: contain;
+}
+
+.organigrama-description {
+  font-size: 1.5rem;
+  color: #161a1d;
+  font-family: 'NotoSans_ExtraCondensed-Black';
+  margin-top: 1rem;
+}
+
+.organigrama-footer {
+  margin-top: 2rem;
+}
+
+.organigrama-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1e5b4f;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.organigrama-button:hover {
+  background-color: #1e5b4f;
+}
+
+.organigrama-zoom-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.organigrama-zoom-buttons button {
+  padding: 6px 16px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 6px;
+  background: #1e5b4f;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.organigrama-zoom-buttons button:hover {
+  background: #002f2a;
+}
+
+.organigrama-contactos {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #f3f3f3;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.contacto-departamento {
+  margin-bottom: 1rem;
+}
+
+.contacto-toggle {
+  background-color: #9b2247;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contacto-toggle:hover {
+  background-color: #611232;
+}
+
+.contacto-detalle {
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+  color: #333;
 }

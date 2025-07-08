@@ -65,7 +65,15 @@ function ServTecnPage() {
         </li>
       </ul>
 
-      
+             <div className="contact-card">
+  <h3>Contacto</h3>
+  <p>
+    <strong>Nombre:</strong> Adrian Marquez Rangel<br />
+    <strong>Correo:</strong> <a href="amarquer@sct@gob.mx">amarquer@sct@gob.mx</a><br />
+    <strong>Teléfono:</strong> <a href="Tel:4734541100/01">4734541100/01</a><br />
+    <strong>Extensión:</strong> 48016/48018
+  </p>
+</div>
     </div>
   );
 }

@@ -16,7 +16,7 @@ function SubdireccionObras() {
           <li>Residencia general de carreteras alimentadoras.</li>
         </ul>
 
-        <p>
+        <p className="obras-section">
           Coordina las acciones relacionadas con la contratación de obra pública en la red carretera
           (conservación de carretera, construcción y supervisión de nuevas carreteras, ampliaciones,
           construcciones de puentes y mantenimiento de dicha obra, así como la supervisión y

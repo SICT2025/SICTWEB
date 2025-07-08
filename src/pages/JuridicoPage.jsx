@@ -31,6 +31,15 @@ function JuridicoPage() {
           ))}
         </ul>
       </section>
+     <div className="contact-card">
+  <h3>Contacto</h3>
+  <p>
+    <strong>Nombre:</strong> Edith Dominguez Hernández<br />
+    <strong>Correo:</strong> <a href="mailto:edomingh@sct.gob.mx">edomingh@sct.gob.mx</a><br />
+    <strong>Teléfono:</strong> <a href="tel:4734541100">4734541100/01</a><br />
+    <strong>Extensión:</strong> 48008
+  </p>
+</div>
     </div>
   );
 }

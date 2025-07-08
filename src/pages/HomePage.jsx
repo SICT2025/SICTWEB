@@ -21,6 +21,16 @@ function HomePage() {
           Esto incluye la elaboración de programas para el desarrollo de bienes, servicios y pasajeros. No obstante, en el caso de las vías marítimas, ríos y lagos, deberá coordinarse con la Secretaría de Marina; conducir las estrategias gubernamentales en las áreas de telecomunicación y radiodifusión; operar Telecomm-Telégrafos, Correos de México, Aeropuertos y Servicios Auxiliares, caminos y puentes federales; otorgar, vigilar, renovar o retirar concesiones para la operación de medios de comunicación y transportes (aeropuertos, carreteras, vías férreas, etc.); dirigir la construcción de infraestructura pública para comunicaciones y transportes, y regular las características profesionales del personal que opere las vías generales de comunicación y transporte.
         </p>
         <img className="home-image" src={centro} alt="Centro SICT" />
+
+        <div className="contact-card-home">
+  <h3>Contacto</h3>
+  <p>
+    <strong>Dirección General:</strong> Mtra. Irma Leticia Gonzáles Sánchez<br />
+    <strong>Correo:</strong> <a href="irma.gonzalez@sict.gob.mx">irma.gonzalez@sict.gob.mx</a><br />
+    <strong>Teléfono:</strong> <a href="tel:4734541100">4734541100/01</a><br />
+    <strong>Extensión:</strong> 48000
+  </p>
+</div>
       </div>
     </div>
   );
