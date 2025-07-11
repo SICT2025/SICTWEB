@@ -1,0 +1,56 @@
+/* RESET GENERAL */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* CONTENEDORES RESPONSIVOS */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* TEXTO Y TITULOS */
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* GRILLAS */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
