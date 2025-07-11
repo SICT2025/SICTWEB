@@ -1,7 +1,18 @@
+/* Estilos base del navbar */
 .navbar {
   background: #611232;
   padding: 0;
   border-bottom: 6px solid #611232;
+  position: relative;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar-links,
@@ -14,7 +25,7 @@
 .navbar-links {
   display: flex;
   align-items: center;
-  gap: 12px; /* Espacio uniforme entre elementos */
+  gap: 12px;
 }
 
 .navbar-links > li {
@@ -43,7 +54,7 @@
 .navbar-links a:hover,
 .navbar-dropdown-btn:hover,
 .navbar-dropdown-list a:hover {
-  color: #a57f2c; /* Amarillo */
+  color: #a57f2c;
   background: none;
 }
 
@@ -61,6 +72,11 @@
   border-radius: 0 0 6px 6px;
   z-index: 10;
   padding: 8px 0;
+  display: none; /* Oculto por defecto */
+}
+
+.navbar-dropdown:hover .navbar-dropdown-list {
+  display: block; /* Muestra el dropdown al hacer hover */
 }
 
 .navbar-dropdown-list li {
@@ -76,7 +92,7 @@
   transition: color 0.2s, background 0.2s;
 }
 
-/* Botón de accesibilidad en el navbar */
+/* Botón de accesibilidad */
 .navbar-links > li > .accessibility-toggle,
 .navbar-links > li > button.accessibility-toggle {
   margin-left: 0;
@@ -86,4 +102,108 @@
   padding: 0;
   background: none;
   border: none;
+}
+
+/* Hamburguesa para móviles */
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Media Queries para diseño responsivo */
+
+/* Tabletas (768px - 1024px) */
+@media (max-width: 1024px) {
+  .navbar-links a,
+  .navbar-dropdown-btn {
+    font-size: 1rem;
+    padding: 12px 6px;
+  }
+}
+
+/* Móviles y tablets pequeñas (hasta 767px) */
+@media (max-width: 767px) {
+  .navbar-container {
+    padding: 0 15px;
+    flex-wrap: wrap;
+  }
+  
+  .navbar-toggle {
+    display: block;
+    order: 1;
+  }
+  
+  .navbar-links {
+    display: none; /* Oculto por defecto en móviles */
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    order: 2;
+  }
+  
+  .navbar-links.active {
+    display: flex; /* Mostrar cuando está activo */
+  }
+  
+  .navbar-links > li {
+    margin: 0;
+    width: 100%;
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+  
+  .navbar-links a,
+  .navbar-dropdown-btn {
+    padding: 12px 15px;
+    font-size: 1rem;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .navbar-dropdown-list {
+    position: static;
+    display: none; /* Oculto por defecto */
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  
+  .navbar-dropdown:hover .navbar-dropdown-list {
+    display: none; /* Anulamos el hover para móviles */
+  }
+  
+  .navbar-dropdown.active .navbar-dropdown-list {
+    display: block; /* Mostrar con clase active */
+  }
+  
+  .navbar-dropdown-list a {
+    padding-left: 30px;
+  }
+  
+  /* Botón de accesibilidad en móviles */
+  .accessibility-toggle {
+    padding: 12px 15px !important;
+    justify-content: flex-start !important;
+  }
+}
+
+/* Móviles pequeños (menos de 480px) */
+@media (max-width: 479px) {
+  .navbar-container {
+    padding: 0 10px;
+  }
+  
+  .navbar-links a,
+  .navbar-dropdown-btn {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+  
+  .navbar-dropdown-list a {
+    padding-left: 25px;
+  }
 }

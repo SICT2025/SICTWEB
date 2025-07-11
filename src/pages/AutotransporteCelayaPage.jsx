@@ -3,7 +3,7 @@ import '../assets/styles/pages/RecursosFinancierosPage.css'; // Puedes reutiliza
 
 function AutotransporteCelayaPage() {
   return (
-    <div className="recursos-financieros-container">
+    <div className="recursos-financieros-containe ">
       <h1 className="abajo">Departamento de Autotransporte Federal "Celaya"</h1>
       {/* Agrega aquí más contenido si lo necesitas */}
     </div>

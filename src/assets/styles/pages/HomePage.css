@@ -1,16 +1,25 @@
+/* Estilos base */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #e6d194;
+  font-size: 16px; /* Tamaño base para rem */
+}
+
 .home-bg {
   background: #e6d194;
   min-height: 100vh;
-   /* Quita el padding inferior */
   display: flex;
-  flex-direction: column; /* Asegura que los hijos se apilen verticalmente */
+  flex-direction: column;
   justify-content: flex-start;
   flex: 1 1 auto;
+  padding: 0 16px; /* Padding lateral para móviles */
 }
- 
+
 .home-main-card {
   background: #fff;
   max-width: 1000px;
+  width: 100%; /* Asegura que ocupe el ancho disponible */
   margin: 0 auto;
   border-radius: 14px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.07);
@@ -18,16 +27,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box; /* Incluye padding en el ancho */
 }
- 
-/* Asegúrate de que html y body no tengan margen ni padding */
-html, body {
-  margin: 0;
-  padding: 0;
-  background: #e6d194;
-}
+
 .home-header-row {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,7 +39,6 @@ html, body {
   padding: 0;
 }
 
-/* Imagen centrada y responsiva, sin recortes ni deformaciones */
 .header-logos-comunicaciones {
   width: 100%;
   max-width: 1024px;
@@ -55,12 +58,13 @@ html, body {
 .home-header-title {
   display: flex;
   align-items: center;
-  gap: 10px;}
- 
+  gap: 10px;
+}
+
 .home-comunicaciones-logo {
   height: 36px;
 }
- 
+
 .home-comunicaciones-text {
   font-family: 'Montserrat', Arial, sans-serif;
   font-size: 1.3rem;
@@ -68,7 +72,7 @@ html, body {
   font-weight: bold;
   letter-spacing: 1px;
 }
- 
+
 .home-title {
   font-size: 2rem;
   color: #1e5b4f;
@@ -78,14 +82,14 @@ html, body {
   line-height: 1.2;
   font-family: 'Patria Light';
 }
- 
+
 .home-divider {
   border: none;
   border-top: 3px solid #611232;
   width: 90%;
   margin: 18px 0 24px 0;
 }
- 
+
 .home-description {
   color: #222;
   font-size: 1.1rem;
@@ -93,9 +97,8 @@ html, body {
   margin-bottom: 32px;
   line-height: 1.7;
   font-family: 'NotoSans_Condensed-Thin';
-  
 }
- 
+
 .home-image {
   width: 100%;
   max-width: 600px;
@@ -107,4 +110,88 @@ html, body {
 .contact-card-home {
   align-self: flex-start;
   margin-left: 0;
+}
+
+/* Media Queries para diseño responsivo */
+
+/* Tabletas y móviles en horizontal (768px - 1024px) */
+@media (max-width: 1024px) {
+  .home-main-card {
+    padding: 30px;
+  }
+  
+  .home-title {
+    font-size: 1.8rem;
+  }
+  
+  .home-description {
+    font-size: 1rem;
+  }
+}
+
+/* Móviles (480px - 767px) */
+@media (max-width: 767px) {
+  .home-bg {
+    padding: 0 12px;
+  }
+  
+  .home-main-card {
+    padding: 24px 20px;
+    border-radius: 10px;
+  }
+  
+  .home-title {
+    font-size: 1.6rem;
+    margin: 14px 0 8px 0;
+  }
+  
+  .home-header-title {
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .home-comunicaciones-text {
+    font-size: 1.1rem;
+  }
+  
+  .home-divider {
+    margin: 14px 0 20px 0;
+  }
+  
+  .home-description {
+    font-size: 0.95rem;
+    margin-bottom: 24px;
+    text-align: left; /* Cambio de justify a left para móviles */
+  }
+  
+  .header-logos-comunicaciones {
+    border-radius: 8px;
+  }
+}
+
+/* Móviles pequeños (menos de 480px) */
+@media (max-width: 479px) {
+  .home-main-card {
+    padding: 20px 16px;
+  }
+  
+  .home-title {
+    font-size: 1.4rem;
+  }
+  
+  .home-comunicaciones-logo {
+    height: 30px;
+  }
+  
+  .home-comunicaciones-text {
+    font-size: 1rem;
+  }
+  
+  .home-description {
+    line-height: 1.6;
+  }
+  
+  .home-image {
+    margin-top: 8px;
+  }
 }
