@@ -30,98 +30,74 @@ export default function BuzonQuejas() {
   };
 
   return (
-    <div className="buzon-root"
-      style={{
-        maxWidth: 1100,
-        margin: '40px auto',
-        padding: 24,
-        display: 'flex',
-        gap: 48,
-        alignItems: 'flex-start',
-        background: '#fff',
-        borderRadius: 18,
-        boxShadow: '0 4px 24px 0 rgba(0,0,0,0.10), 0 1.5px 6px 0 rgba(0,0,0,0.08)',
-        transition: 'box-shadow 0.2s',
-      }}>
-      {/* Columna izquierda: Descripción */}
-      <div style={{ flex: 1, minWidth: 320 }}>
-        <h1 className="buzon-title">Buzón de Quejas</h1>
-        <p className="buzon-body">
-          En este espacio puedes expresar tus inquietudes y reportar situaciones que afecten tu bienestar laboral.
-        </p>
-        <h2 className="buzon-subtitle">Quejas Laborales</h2>
-        <p className="buzon-body">
-          Si tienes algún problema relacionado con tus condiciones de trabajo, ambiente laboral, trato de superiores o compañeros, puedes presentar tu queja de manera confidencial. Todas las quejas serán atendidas con seriedad y respeto.
-        </p>
-        <h2 className="buzon-subtitle">Quejas por Acoso Sexual</h2>
-        <p className="buzon-body">
-          Si has sido víctima o testigo de acoso sexual en el entorno laboral, este buzón está disponible para que puedas reportarlo de forma segura y confidencial. Tu denuncia será tratada con la máxima discreción y se tomarán las medidas necesarias para protegerte.
-        </p>
-        <div style={{ marginTop: 32 }}>
-          <b>¿Ya tienes un folio?</b>{' '}
-          <Link to="/consulta-estatus-queja" style={{ color: '#8a0047', textDecoration: 'underline' }}>
-            Consulta el estatus de tu queja aquí
-          </Link>
+    <div className="buzon-root">
+      {/* Contenedor principal */}
+      <div className="buzon-container">
+        {/* Columna izquierda: Descripción */}
+        <div className="buzon-info">
+          <h1 className="buzon-title">Buzón de Quejas</h1>
+          <p className="buzon-body">
+            En este espacio puedes expresar tus inquietudes y reportar situaciones que afecten tu bienestar laboral.
+          </p>
+          
+          <h2 className="buzon-subtitle">Quejas Laborales</h2>
+          <p className="buzon-body">
+            Si tienes algún problema relacionado con tus condiciones de trabajo, ambiente laboral, trato de superiores o compañeros, puedes presentar tu queja de manera confidencial. Todas las quejas serán atendidas con seriedad y respeto.
+          </p>
+          
+          <h2 className="buzon-subtitle">Quejas por Acoso Sexual</h2>
+          <p className="buzon-body">
+            Si has sido víctima o testigo de acoso sexual en el entorno laboral, este buzón está disponible para que puedas reportarlo de forma segura y confidencial. Tu denuncia será tratada con la máxima discreción y se tomarán las medidas necesarias para protegerte.
+          </p>
+          
+          <div className="buzon-consulta">
+            <b>¿Ya tienes un folio?</b>{' '}
+            <Link to="/consulta-estatus-queja" className="buzon-link">
+              Consulta el estatus de tu queja aquí
+            </Link>
+          </div>
         </div>
-      </div>
-      {/* Columna derecha: Formulario */}
-      <form
-        onSubmit={handleSubmit}
-        style={{
-          flex: 1,
-          minWidth: 320,
-          background: 'transparent',
-          display: 'flex',
-          flexDirection: 'column',
-          gap: 16
-        }}
-      >
-        <label className="buzon-body">
-          Tipo de queja:
-          <select
-            value={tipo}
-            onChange={e => setTipo(e.target.value)}
-            style={{ marginLeft: 8, marginTop: 4 }}
+        
+        {/* Columna derecha: Formulario */}
+        <form onSubmit={handleSubmit} className="buzon-form">
+          <div className="form-group">
+            <label className="buzon-body">
+              Tipo de queja:
+              <select
+                value={tipo}
+                onChange={e => setTipo(e.target.value)}
+                className="form-select"
+                disabled={enviando}
+              >
+                <option value="laboral">Laboral</option>
+                <option value="acoso">Acoso sexual</option>
+              </select>
+            </label>
+          </div>
+          
+          <div className="form-group">
+            <label className="buzon-body">
+              Descripción:
+              <textarea
+                value={texto}
+                onChange={e => setTexto(e.target.value)}
+                className="form-textarea"
+                placeholder="Describe tu queja aquí..."
+                required
+                disabled={enviando}
+              />
+            </label>
+          </div>
+          
+          <button
+            type="submit"
+            disabled={enviando}
+            className="buzon-button"
           >
-            <option value="laboral">Laboral</option>
-            <option value="acoso">Acoso sexual</option>
-          </select>
-        </label>
-        <label className="buzon-body">
-          Descripción:
-          <textarea
-            rows={7}
-            value={texto}
-            onChange={e => setTexto(e.target.value)}
-            style={{
-              width: '100%',
-              marginTop: 8,
-              resize: 'vertical',
-              fontFamily: 'inherit',
-              fontSize: '1rem'
-            }}
-            placeholder="Describe tu queja aquí..."
-            required
-          />
-        </label>
-        <button
-          type="submit"
-          disabled={enviando}
-          style={{
-            marginTop: 8,
-            background: '#8a0047',
-            color: '#fff',
-            border: 'none',
-            borderRadius: 6,
-            padding: '10px 20px',
-            fontWeight: 'bold',
-            cursor: enviando ? 'not-allowed' : 'pointer',
-            alignSelf: 'flex-end'
-          }}
-        >
-          {enviando ? 'Enviando...' : 'Enviar queja'}
-        </button>
-      </form>
+            {enviando ? 'Enviando...' : 'Enviar queja'}
+          </button>
+        </form>
+      </div>
     </div>
   );
 }

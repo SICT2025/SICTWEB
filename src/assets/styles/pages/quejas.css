@@ -1,24 +1,166 @@
+/* Estilos base */
 .buzon-root {
-  font-family: 'NotoSans_Condensed-Thin';
+  padding: 20px;
+  background: #f5f5f5;
+  min-height: calc(100vh - 40px);
+}
+
+.buzon-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.buzon-info, .buzon-form {
+  flex: 1;
+  min-width: 300px;
+  padding: 30px;
+  box-sizing: border-box;
 }
 
 .buzon-title {
   color: #1e5b4f;
   font-family: 'Patria_Light';
   font-size: 2rem;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .buzon-subtitle {
   font-family: 'Patria_Regular';
   color: #1e5b4f;
-  margin-top: 24px;
-  margin-bottom: 8px;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
   font-size: 1.3rem;
 }
 
 .buzon-body {
-  color:black;
+  color: #333;
   font-family: 'NotoSans_Condensed-Thin';
   font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.buzon-consulta {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.buzon-link {
+  color: #8a0047;
+  text-decoration: underline;
+}
+
+/* Formulario */
+.buzon-form {
+  background: #f9f9f9;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-select, .form-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-family: 'NotoSans_Condensed-Thin';
+  font-size: 1rem;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.form-select {
+  height: 40px;
+}
+
+.form-textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.buzon-button {
+  background: #8a0047;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+  width: 100%;
+  max-width: 200px;
+}
+
+.buzon-button:hover:not(:disabled) {
+  background: #6a0036;
+}
+
+.buzon-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Media Queries para diseño responsivo */
+@media (max-width: 1024px) {
+  .buzon-info, .buzon-form {
+    padding: 25px;
+  }
+  
+  .buzon-title {
+    font-size: 1.8rem;
+  }
+  
+  .buzon-subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .buzon-container {
+    flex-direction: column;
+  }
+  
+  .buzon-info, .buzon-form {
+    width: 100%;
+  }
+  
+  .buzon-form {
+    border-top: 1px solid #eee;
+  }
+  
+  .buzon-button {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .buzon-root {
+    padding: 10px;
+  }
+  
+  .buzon-info, .buzon-form {
+    padding: 20px;
+  }
+  
+  .buzon-title {
+    font-size: 1.6rem;
+  }
+  
+  .buzon-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .form-textarea {
+    min-height: 120px;
+  }
 }
