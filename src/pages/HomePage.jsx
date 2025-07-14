@@ -1,16 +1,12 @@
+// src/pages/HomePage.jsx
 import React from 'react';
 import '../assets/styles/pages/HomePage.css';
-
 import centro from '../assets/imagenes/centro.PNG';
 
 function HomePage() {
   return (
     <div className="home-bg">
       <div className="home-main-card">
-        <div className="home-header-row">
-          <div className="home-header-title">
-          </div>
-        </div>
         <h1 className="home-title">
           Módulo de Información de la Secretaría<br />
           de Infraestructura, Comunicaciones y Transportes
@@ -23,14 +19,14 @@ function HomePage() {
         <img className="home-image" src={centro} alt="Centro SICT" />
 
         <div className="contact-card-home">
-  <h3>Contacto</h3>
-  <p>
-    <strong>Dirección General:</strong> Mtra. Irma Leticia Gonzáles Sánchez<br />
-    <strong>Correo:</strong> <a href="irma.gonzalez@sict.gob.mx">irma.gonzalez@sict.gob.mx</a><br />
-    <strong>Teléfono:</strong> <a href="tel:4734541100">4734541100/01</a><br />
-    <strong>Extensión:</strong> 48000
-  </p>
-</div>
+          <h3>Contacto</h3>
+          <p>
+            <strong>Dirección General:</strong> Mtra. Irma Leticia Gonzáles Sánchez<br />
+            <strong>Correo:</strong> <a href="mailto:irma.gonzalez@sict.gob.mx">irma.gonzalez@sict.gob.mx</a><br />
+            <strong>Teléfono:</strong> <a href="tel:4734541100">4734541100/01</a><br />
+            <strong>Extensión:</strong> 48000
+          </p>
+        </div>
       </div>
     </div>
   );

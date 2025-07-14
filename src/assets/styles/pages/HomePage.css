@@ -1,9 +1,16 @@
-/* Estilos base */
+/* src/assets/styles/pages/HomePage.css */
+
 html, body {
   margin: 0;
   padding: 0;
   background: #e6d194;
-  font-size: 16px; /* Tamaño base para rem */
+  font-size: 16px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .home-bg {
@@ -13,13 +20,13 @@ html, body {
   flex-direction: column;
   justify-content: flex-start;
   flex: 1 1 auto;
-  padding: 0 16px; /* Padding lateral para móviles */
+  padding: 0 16px;
 }
 
 .home-main-card {
   background: #fff;
   max-width: 1000px;
-  width: 100%; /* Asegura que ocupe el ancho disponible */
+  width: 100%;
   margin: 0 auto;
   border-radius: 14px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.07);
@@ -27,16 +34,6 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-sizing: border-box; /* Incluye padding en el ancho */
-}
-
-.home-header-row {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #e6d194;
-  padding: 0;
 }
 
 .header-logos-comunicaciones {
@@ -44,33 +41,13 @@ html, body {
   max-width: 1024px;
   min-width: 320px;
   height: auto;
-  aspect-ratio: 1024 / 219;
   display: block;
   object-fit: contain;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   background: #e6d194;
   border-radius: 10px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.06);
   transition: box-shadow 0.2s;
-}
-
-.home-header-title {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.home-comunicaciones-logo {
-  height: 36px;
-}
-
-.home-comunicaciones-text {
-  font-family: 'Montserrat', Arial, sans-serif;
-  font-size: 1.3rem;
-  color: #611232;
-  font-weight: bold;
-  letter-spacing: 1px;
 }
 
 .home-title {
@@ -100,8 +77,9 @@ html, body {
 }
 
 .home-image {
-  width: 100%;
-  max-width: 600px;
+  width: auto;
+  max-width: 450px;
+  height: auto;
   border-radius: 10px;
   margin-top: 12px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.08);
@@ -112,18 +90,18 @@ html, body {
   margin-left: 0;
 }
 
-/* Media Queries para diseño responsivo */
+/* Media Queries */
 
 /* Tabletas y móviles en horizontal (768px - 1024px) */
 @media (max-width: 1024px) {
   .home-main-card {
     padding: 30px;
   }
-  
+
   .home-title {
     font-size: 1.8rem;
   }
-  
+
   .home-description {
     font-size: 1rem;
   }
@@ -134,63 +112,47 @@ html, body {
   .home-bg {
     padding: 0 12px;
   }
-  
+
   .home-main-card {
     padding: 24px 20px;
     border-radius: 10px;
   }
-  
+
   .home-title {
     font-size: 1.6rem;
     margin: 14px 0 8px 0;
   }
-  
-  .home-header-title {
-    flex-direction: column;
-    gap: 6px;
-  }
-  
-  .home-comunicaciones-text {
-    font-size: 1.1rem;
-  }
-  
+
   .home-divider {
     margin: 14px 0 20px 0;
   }
-  
+
   .home-description {
     font-size: 0.95rem;
     margin-bottom: 24px;
-    text-align: left; /* Cambio de justify a left para móviles */
+    text-align: left;
   }
-  
+
   .header-logos-comunicaciones {
+    max-width: 100%;
     border-radius: 8px;
   }
 }
 
-/* Móviles pequeños (menos de 480px) */
+/* Móviles pequeños (< 480px) */
 @media (max-width: 479px) {
   .home-main-card {
     padding: 20px 16px;
   }
-  
+
   .home-title {
     font-size: 1.4rem;
   }
-  
-  .home-comunicaciones-logo {
-    height: 30px;
-  }
-  
-  .home-comunicaciones-text {
-    font-size: 1rem;
-  }
-  
+
   .home-description {
     line-height: 1.6;
   }
-  
+
   .home-image {
     margin-top: 8px;
   }

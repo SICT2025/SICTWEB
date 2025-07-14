@@ -30,7 +30,7 @@ function Footer() {
         </div>
         <div className="footer-col">
           <h4>Contacto</h4>
-          <p>Dudas e información al<br /><a href="numero">473-733-2072</a>
+          <p>Dudas e información al<br/><a>473-733-2072</a>
             <br/> 4734541100/01
           </p>
           <div className="footer-social"></div>

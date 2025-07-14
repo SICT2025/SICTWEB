@@ -1,26 +1,36 @@
 .footer-gob {
-  background: #611232;
+  background-color: #611232;
   color: #fff;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 2rem;
   font-family: 'Montserrat', Arial, sans-serif;
   position: relative;
 }
 
 .footer-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 40px 32px 24px 32px;
-  flex-wrap: wrap;
+  padding: 2.5rem 2rem 1.5rem;
+  gap: 2rem;
+  box-sizing: border-box;
 }
 
 .footer-col {
   flex: 1 1 220px;
   min-width: 200px;
-  margin: 0 16px;
+  padding: 0 1rem;
+}
+
+.footer-col h3 {
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  margin-bottom: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #fff;
 }
 
 .logo-col {
@@ -32,11 +42,16 @@
 }
 
 .footer-escudo {
-  width: 300px;
-  margin-bottom: 8px;
+  width: 100%;
+  height: auto;
+  max-width: 280px;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
 }
 
-
+.footer-escudo:hover {
+  transform: scale(1.02);
+}
 
 .footer-col ul {
   list-style: none;
@@ -45,51 +60,144 @@
 }
 
 .footer-col ul li {
-  margin-bottom: 6px;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
 }
 
-.footer-col ul li a,
-.footer-col p a {
+.footer-col p a,
+.footer-col ul li a {
   color: #fff;
   text-decoration: underline;
-  transition: color 0.2s;
+  transition: color 0.3s ease;
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  line-height: 1.5;
 }
 
-.footer-col ul li a:hover,
-.footer-col p a:hover {
-  color: #ffd700;
+.footer-col p a:hover,
+.footer-col ul li a:hover {
+  color: #ffd3e0;
 }
 
 .footer-desc {
-  font-size: 0.98rem;
-  margin-bottom: 10px;
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+  color: #f2f2f2;
 }
 
 .footer-pattern {
   width: 100%;
   height: 40px;
   background: url('https://framework-gb.cdn.gob.mx/landing/img/pleca.svg') repeat-x center;
-  margin-top: 24px;
-}
-
-@media (max-width: 900px) {
-  .footer-content {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 32px 16px 16px 16px;
-  }
-  .footer-col, .logo-col {
-    margin-bottom: 24px;
-    margin-right: 0;
-  }
+  background-size: contain;
+  margin-top: 1.5rem;
 }
 
 .link-style {
   background: none;
   border: none;
-  color: rgb(253, 253, 255);
+  color: #fff;
   text-decoration: underline;
   cursor: pointer;
   padding: 0;
   font: inherit;
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  transition: color 0.3s ease;
+}
+
+.link-style:hover {
+  color: #ffd3e0;
+}
+
+/* Responsive Design */
+
+/* Tabletas */
+@media (max-width: 1024px) {
+  .footer-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .footer-col {
+    flex: 1 1 180px;
+  }
+
+  .logo-col {
+    flex: 1 1 220px;
+  }
+}
+
+/* Tabletas pequeñas */
+@media (max-width: 767px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .footer-col,
+  .logo-col {
+    flex: 1 1 100%;
+    min-width: 100%;
+    padding: 0;
+  }
+
+  .footer-escudo {
+    width: 250px;
+  }
+
+  .footer-pattern {
+    height: 30px;
+    margin-top: 1.5rem;
+  }
+}
+
+/* Móviles */
+@media (max-width: 599px) {
+  .footer-content {
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+  }
+
+  .footer-col h3 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-desc,
+  .footer-col ul li a,
+  .footer-col p a,
+  .link-style {
+    font-size: 0.95rem;
+  }
+
+  .footer-escudo {
+    width: 220px;
+  }
+
+  .footer-pattern {
+    height: 25px;
+    margin-top: 1rem;
+  }
+}
+
+/* Móviles muy pequeños */
+@media (max-width: 375px) {
+  .footer-content {
+    padding: 1.25rem 0.75rem;
+  }
+
+  .footer-col h3 {
+    font-size: 0.95rem;
+  }
+
+  .footer-desc,
+  .footer-col ul li a,
+  .footer-col p a,
+  .link-style {
+    font-size: 0.9rem;
+  }
+
+  .footer-escudo {
+    width: 180px;
+  }
 }
