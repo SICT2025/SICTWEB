@@ -31,7 +31,7 @@ function JuridicoPage() {
           ))}
         </ul>
       </section>
-     <div className="contact-card">
+     <div className="contact-card-juridico">
   <h3>Contacto</h3>
   <p>
     <strong>Nombre:</strong> Edith Dominguez Hernández<br />

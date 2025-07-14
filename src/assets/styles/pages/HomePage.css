@@ -1,5 +1,4 @@
-/* src/assets/styles/pages/HomePage.css */
-
+/* Estilos base */
 html, body {
   margin: 0;
   padding: 0;
@@ -30,10 +29,11 @@ html, body {
   margin: 0 auto;
   border-radius: 14px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.07);
-  padding: 40px 40px 32px 40px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .header-logos-comunicaciones {
@@ -74,25 +74,66 @@ html, body {
   margin-bottom: 32px;
   line-height: 1.7;
   font-family: 'NotoSans_Condensed-Thin';
+  word-break: break-word;
+  hyphens: auto;
+}
+
+/* Contenedor de imagen mejorado */
+.home-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .home-image {
-  width: auto;
-  max-width: 450px;
+  width: 100%;
+  max-width: 100%;
   height: auto;
+  max-height: 500px;
+  object-fit: contain;
   border-radius: 10px;
-  margin-top: 12px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.home-image:hover {
+  transform: scale(1.02);
 }
 
 .contact-card-home {
   align-self: flex-start;
-  margin-left: 0;
+  width: 100%;
+  margin-top: 30px;
+  padding: 20px;
+  background: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.contact-card-home h3 {
+  color: #611232;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.contact-card-home a {
+  color: #1e5b4f;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-card-home a:hover {
+  color: #8a0047;
+  text-decoration: underline;
 }
 
 /* Media Queries */
 
-/* Tabletas y móviles en horizontal (768px - 1024px) */
+/* Tabletas (768px - 1024px) */
 @media (max-width: 1024px) {
   .home-main-card {
     padding: 30px;
@@ -105,9 +146,13 @@ html, body {
   .home-description {
     font-size: 1rem;
   }
+
+  .home-image {
+    max-height: 400px;
+  }
 }
 
-/* Móviles (480px - 767px) */
+/* Móviles grandes (576px - 767px) */
 @media (max-width: 767px) {
   .home-bg {
     padding: 0 12px;
@@ -133,14 +178,17 @@ html, body {
     text-align: left;
   }
 
-  .header-logos-comunicaciones {
-    max-width: 100%;
-    border-radius: 8px;
+  .home-image {
+    max-height: 300px;
+  }
+
+  .contact-card-home {
+    padding: 15px;
   }
 }
 
-/* Móviles pequeños (< 480px) */
-@media (max-width: 479px) {
+/* Móviles pequeños (hasta 575px) */
+@media (max-width: 575px) {
   .home-main-card {
     padding: 20px 16px;
   }
@@ -149,11 +197,12 @@ html, body {
     font-size: 1.4rem;
   }
 
-  .home-description {
-    line-height: 1.6;
+  .home-image {
+    max-height: 250px;
   }
 
-  .home-image {
-    margin-top: 8px;
+  .contact-card-home {
+    margin-top: 20px;
+    padding: 12px;
   }
 }

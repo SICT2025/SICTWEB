@@ -73,6 +73,37 @@
   transform: translateY(-2px);
 }
 
+.contact-card-juridico {
+  align-self: flex-start;
+  width: 100%;
+  margin-top: 30px;
+  padding: 20px;
+  background: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+
+.contact-card-juridico h3 {
+  color: #611232;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.contact-card-juridico a {
+  color: #1e5b4f;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-card-juridico a:hover {
+  color: #8a0047;
+  text-decoration: underline;
+}
+
+
+
+
 /* Media Queries para diseño responsivo */
 
 /* Tabletas (768px - 1024px) */
@@ -129,6 +160,10 @@
     padding: 10px 20px;
     font-size: 0.95rem;
   }
+  .contact-card-juridico
+   {
+    padding: 15px;
+  }
 }
 
 /* Móviles pequeños (hasta 575px) */
@@ -165,6 +200,10 @@
   
   .juridico-footer {
     margin-top: 1.5rem;
+  }
+  .contact-card-juridico
+   {
+    padding: 15px;
   }
 }
 

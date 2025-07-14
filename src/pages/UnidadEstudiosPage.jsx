@@ -1,14 +1,12 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../assets/styles/pages/UnidadEstudios.css';
-import logoComunicaciones from '../assets/imagenes/img1.png';
 
 function UnidadEstudiosPage() {
   const navigate = useNavigate();
 
   return (
     <div className="unidad-estudios-page">
-      <img className="img" src={logoComunicaciones} alt="Logo" />
       <h1 className="abajo">Unidad de estudios</h1>
       <hr />
       <h2>Realiza las siguientes actividades:</h2>

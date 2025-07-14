@@ -1,6 +1,5 @@
 import React from 'react';
 import '../assets/styles/pages/RecursosFinancierosPage.css'; // Puedes reutilizar el CSS
-import logo from '../assets/imagenes/img1.png';
 import { useNavigate } from 'react-router-dom';
 
 function DepartamentoHumanosPage() {
@@ -8,7 +7,6 @@ function DepartamentoHumanosPage() {
 
   return (
     <div className="recursos-financieros-container">
-      <img className="img" src={logo} alt="Logo SICT" />
       <h1 className="abajo">Departamento de Recursos Humanos</h1>
       <hr />
       <h2>Funciones del departamento:</h2>

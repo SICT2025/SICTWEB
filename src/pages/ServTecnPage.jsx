@@ -68,10 +68,10 @@ function ServTecnPage() {
              <div className="contact-card">
   <h3>Contacto</h3>
   <p>
-    <strong>Nombre:</strong> Adrian Marquez Rangel<br />
-    <strong>Correo:</strong> <a href="amarquer@sct@gob.mx">amarquer@sct@gob.mx</a><br />
+    <strong>Nombre:</strong> Andres Reyes Hernandez<br />
+    <strong>Correo:</strong> <a href="ereyeshe@sct.gob.mx">ereyeshe@sct.gob.mx</a><br />
     <strong>Teléfono:</strong> <a href="Tel:4734541100/01">4734541100/01</a><br />
-    <strong>Extensión:</strong> 48016/48018
+    <strong>Extensión:</strong> 48493
   </p>
 </div>
     </div>

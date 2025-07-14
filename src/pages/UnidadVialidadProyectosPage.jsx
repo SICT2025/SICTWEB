@@ -1,14 +1,13 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../assets/styles/pages/UnidadVialidadProyectos.css';
-import logoComunicaciones from '../assets/imagenes/img1.png';
+
 
 function UnidadVialidadProyectosPage() {
   const navigate = useNavigate();
 
   return (
     <div className="unidad-vialidad-proyectos-page">
-      <img className="img" src={logoComunicaciones} alt="Logo" />
       <h1 className="abajo">Unidad de vialidad y proyectos</h1>
       <hr />
       <h2>Realiza las siguientes actividades:</h2>
