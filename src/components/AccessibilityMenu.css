@@ -5,30 +5,31 @@
   z-index: 2100;
   background: #ededed;
   border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
-  padding: 18px 10px;
-  min-width: 260px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  padding: 12px 8px;
+  min-width: 200px;
+  max-width: 280px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  max-height: 80vh;         /* Limita la altura al 80% de la ventana */
-  overflow-y: auto;         /* Habilita el scroll vertical */
-  padding-right: 8px;       /* Espacio para la barra de scroll */
+  gap: 10px;
+  max-height: 70vh;
+  overflow-y: auto;
+  padding-right: 6px;
 }
 
-/* Personaliza la barra de scroll (Webkit browsers) */
+/* Scroll personalizado */
 .accessibility-menu::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
   background: #f5f5f5;
 }
 
 .accessibility-menu::-webkit-scrollbar-thumb {
-  background: #611232;      /* Guinda */
-  border-radius: 4px;
+  background: #611232;
+  border-radius: 3px;
 }
 
 .accessibility-menu::-webkit-scrollbar-thumb:hover {
-  background: #611232;      /* Guinda más oscuro al pasar el mouse */
+  background: #611232;
 }
 
 .accessibility-btn {
@@ -37,17 +38,17 @@
   background: #e2b8c6;
   border: none;
   border-radius: 10px;
-  padding: 10px 12px;
+  padding: 8px 10px;
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #611232;
   font-weight: 500;
   cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
   transition: background 0.2s, color 0.2s, transform 0.1s;
   width: 100%;
   text-align: left;
-  gap: 18px;
+  gap: 14px;
 }
 
 .accessibility-btn:hover,
@@ -63,28 +64,28 @@
   justify-content: center;
   background: #d48ca2;
   border-radius: 8px;
-  width: 48px;
-  height: 48px;
-  margin-right: 10px;
-  font-size: 2rem;
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+  font-size: 1.6rem;
 }
 
 .accessibility-btn-text {
   flex: 1;
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   color: inherit;
   font-weight: 500;
   word-break: break-word;
 }
 
-/* Botón especial para restablecer */
+/* Botón restablecer */
 .accessibility-btn.reset {
   background: #611232;
   color: #fff;
   font-weight: bold;
-  font-size: 1.15rem;
-  margin-bottom: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .accessibility-btn.reset:hover,
@@ -96,8 +97,8 @@
 .font-size-controls {
   display: flex;
   justify-content: flex-end;
-  gap: 8px;
-  margin-bottom: 10px;
+  gap: 6px;
+  margin-bottom: 8px;
 }
 
 .font-size-btn {
@@ -105,27 +106,27 @@
   color: #fff;
   border: none;
   border-radius: 6px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: bold;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
 }
 
 .font-size-btn:hover,
 .font-size-btn:focus {
   background: #ffd700;
-  color: #611232; 
+  color: #611232;
   outline: none;
 }
 
-/* Estilos para los controles del lector de pantalla */
+/* Lector de pantalla */
 .screen-reader-controls {
   display: flex;
-  gap: 8px;
-  margin-bottom: 8px;
+  gap: 6px;
+  margin-bottom: 6px;
 }
 
 .screen-reader-controls button {
@@ -133,11 +134,11 @@
   color: #611232;
   border: none;
   border-radius: 8px;
-  padding: 8px 14px;
-  font-size: 1rem;
+  padding: 6px 12px;
+  font-size: 0.95rem;
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
 }
 
 .screen-reader-controls button[aria-pressed="true"],
@@ -153,24 +154,173 @@
   outline: none;
 }
 
+/* Media Queries para diseño responsivo */
+
+/* Para tablets y pantallas medianas */
+@media (max-width: 992px) {
+  .accessibility-menu {
+    top: 60px;
+    left: 8px;
+    min-width: 240px;
+    padding: 14px 8px;
+    padding-right: 6px;
+  }
+  
+  .accessibility-btn {
+    padding: 8px 10px;
+    font-size: 1rem;
+    gap: 14px;
+  }
+  
+  .accessibility-btn-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 1.8rem;
+  }
+  
+  .accessibility-btn-text {
+    font-size: 0.95rem;
+  }
+  
+  .font-size-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 1.2rem;
+  }
+}
+
+/* Para móviles en orientación horizontal */
 @media (max-width: 768px) {
   .accessibility-menu {
-    top: 64px;
-    left: 12px;
-    right: 12px;
-    min-width: auto;
-    width: calc(100% - 24px);
+    top: 50px;
+    left: 5px;
+    min-width: 220px;
+    padding: 12px 6px;
+    padding-right: 4px;
+  }
+  
+  .accessibility-btn {
+    padding: 7px 8px;
+    font-size: 0.95rem;
+    gap: 12px;
+  }
+  
+  .accessibility-btn-icon {
+    width: 38px;
+    height: 38px;
+    font-size: 1.6rem;
+    margin-right: 8px;
+  }
+  
+  .accessibility-btn-text {
+    font-size: 0.9rem;
+  }
+  
+  .font-size-btn {
+    width: 34px;
+    height: 34px;
+    font-size: 1.1rem;
+  }
+  
+  .screen-reader-controls button {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Para móviles pequeños */
+@media (max-width: 576px) {
+  .accessibility-menu {
+    top: 40px;
+    left: 2px;
+    min-width: 200px;
+    padding: 10px 4px;
+    padding-right: 2px;
     max-height: 70vh;
-    padding: 16px;
   }
-
-  .accessibility-toggle-wrapper {
-    top: 8px;
-    left: 8px;
+  
+  .accessibility-btn {
+    padding: 6px;
+    font-size: 0.9rem;
+    gap: 10px;
   }
+  
+  .accessibility-btn-icon {
+    width: 34px;
+    height: 34px;
+    font-size: 1.4rem;
+    margin-right: 6px;
+  }
+  
+  .accessibility-btn-text {
+    font-size: 0.85rem;
+  }
+  
+  .font-size-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+  
+  .screen-reader-controls {
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .screen-reader-controls button {
+    width: 100%;
+    padding: 6px;
+  }
+}
 
-  .accessibility-toggle svg {
+/* Para pantallas muy pequeñas (ej. iPhone SE) */
+@media (max-width: 375px) {
+  .accessibility-menu {
+    min-width: 180px;
+    padding: 8px 2px;
+  }
+  
+  .accessibility-btn {
+    padding: 5px;
+    font-size: 0.85rem;
+    gap: 8px;
+  }
+  
+  .accessibility-btn-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 1.2rem;
+    margin-right: 4px;
+  }
+  
+  .accessibility-btn-text {
+    font-size: 0.8rem;
+  }
+  
+  .font-size-controls {
+    justify-content: space-between;
+  }
+  
+  .font-size-btn {
     width: 28px;
     height: 28px;
+    font-size: 0.9rem;
+  }
+  
+}
+
+/* Animación de entrada suave del menú */
+.accessibility-menu {
+  animation: fadeSlideIn 0.3s ease-out;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
