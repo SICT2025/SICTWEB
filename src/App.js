@@ -30,6 +30,8 @@ import BuzonQuejas from './pages/BuzonQuejas';
 import ConsultaEstatusQueja from './pages/ConsultaEstatusQueja';
 import FolioGenerado from './pages/FolioGenerado';
 import ComunicacionSocialPage from './pages/ComunicacionSocialPage';
+import MuralInteractivoPage from './pages/MuralInteractivoPage';
+
 
  
 function App() {
@@ -95,6 +97,7 @@ function App() {
             <Route path="/consulta-estatus-queja" element={<ConsultaEstatusQueja />} />
             <Route path="/folio-generado" element={<FolioGenerado />} />
             <Route path="/comunicacion-social" element={<ComunicacionSocialPage />} />
+            <Route path="/mural" element={<MuralInteractivoPage />} />
           </Routes>
         </div>
         <Footer />

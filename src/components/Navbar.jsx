@@ -81,6 +81,7 @@ function Navbar() {
                 <li><Link to="/subadministracion">Subdirección de Administración</Link></li>
                 <li><Link to="/organigrama">Organigrama</Link></li>
                 <li><Link to="/comunicacion-social">Comunicación Social</Link></li>
+                <Link to="/mural">Mural</Link>
                 <li><Link to="/buzon-quejas">Buzón de Quejas y Sugerencias</Link></li>
               </ul>
             )}

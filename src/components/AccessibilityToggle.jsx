@@ -25,7 +25,7 @@ function AccessibilityToggle() {
 
   return (
     <div
-      onMouseEnter={handleMouseEnter}
+      onMouseEnter={handleMouseEnter}                                                                      
       onMouseLeave={handleMouseLeave}
       style={{ position: 'relative', display: 'inline-block' }}
     >
