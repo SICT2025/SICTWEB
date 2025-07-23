@@ -59,7 +59,7 @@ function Navbar() {
             <AccessibilityToggle />
           </li>
           <li><Link to="/juridico">Jurídico</Link></li>
-          <li><Link to="/mapa">Mapa</Link></li>
+          <li><Link to="/mural">Mural</Link></li>
           <li><Link to="/medicina">Medicina</Link></li>
           <li><Link to="/subdireccion-obras">Subdirección de Obras</Link></li>
           <li
@@ -81,7 +81,7 @@ function Navbar() {
                 <li><Link to="/subadministracion">Subdirección de Administración</Link></li>
                 <li><Link to="/organigrama">Organigrama</Link></li>
                 <li><Link to="/comunicacion-social">Comunicación Social</Link></li>
-                <Link to="/mural">Mural</Link>
+                <Link to="/mapa">Mapa</Link>
                 <li><Link to="/buzon-quejas">Buzón de Quejas y Sugerencias</Link></li>
               </ul>
             )}
