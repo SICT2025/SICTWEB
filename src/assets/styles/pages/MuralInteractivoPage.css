@@ -2,9 +2,9 @@
   max-width: 960px;
   margin: auto;
   padding: 1rem;
-  background-color: #ffffff;
+  background-color: #e6d194;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px #e6d194;
   font-family: 'Arial', sans-serif;
 }
 
@@ -36,3 +36,4 @@
     height: 300px;
   }
 }
+
