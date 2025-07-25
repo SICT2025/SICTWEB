@@ -1,3 +1,4 @@
+// OrganigramaPage.jsx
 import React, { useState } from 'react';
 import '../assets/styles/pages/OrganigramaPage.css';
 import organigrama from '../assets/imagenes/organigrama.jpg';
@@ -75,7 +76,7 @@ const contactos = [
 function OrganigramaPage() {
   const [zoom, setZoom] = useState(1);
 
-  const handleZoomIn = () => setZoom(z => Math.min(z + 0.2, 3));
+  const handleZoomIn = () => setZoom(z => Math.min(z + 0.2, 5));
   const handleZoomOut = () => setZoom(z => Math.max(z - 0.2, 0.5));
   const handleReset = () => setZoom(1);
 
@@ -91,15 +92,17 @@ function OrganigramaPage() {
       </div>
 
       <div className="organigrama-content">
-        <div
-          className="organigrama-zoom-target"
-          style={{ transform: `scale(${zoom})`, transformOrigin: 'top center' }}
-        >
-          <img
-            className="organigrama-image"
-            src={organigrama}
-            alt="Organigrama institucional"
-          />
+        <div className="organigrama-scroll-outer">
+          <div
+            className="organigrama-scroll-inner"
+            style={{ transform: `scale(${zoom})`, transformOrigin: 'top left' }}
+          >
+            <img
+              className="organigrama-image"
+              src={organigrama}
+              alt="Organigrama institucional"
+            />
+          </div>
         </div>
 
         <p id="organigrama-descripcion" className="organigrama-description">
