@@ -48,7 +48,7 @@
   transition: color 0.2s;
   display: flex;
   align-items: center;
-  font-family: 'NotoSans-Medium';
+  font-family: 'NotoSans_Condensed-Thin';
 }
 
 .navbar-links a:hover,

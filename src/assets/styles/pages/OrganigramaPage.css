@@ -2,7 +2,7 @@
   max-width: 960px;
   margin: 2rem auto;
   padding: 2rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'NotoSans_Condensed-Thin ';
   color: #2c3e50;
   background: #fff;
   border-radius: 18px;
@@ -53,7 +53,7 @@
 .organigrama-zoom-target {
   transform-origin: top left;
   transition: transform 0.2s;
-  display: inline-block; /* Para que respete el tamaño y scroll funcione */
+  display: inline-block;
 }
 
 .organigrama-image {
@@ -71,7 +71,7 @@
 .organigrama-description {
   font-size: 1.5rem;
   color: #161a1d;
-  font-family: 'NotoSans_ExtraCondensed-Black';
+  font-family: 'NotoSans_Condensed-Thin';
   margin-top: 1rem;
 }
 

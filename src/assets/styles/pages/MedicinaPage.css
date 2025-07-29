@@ -31,13 +31,13 @@
     color: #611232;
     font-weight: bold;
     margin-top: 20px;
-    font-family: 'NotoSans_ExtraCondensed-Black';
+    font-family: 'NotoSans_Condensed-Thin';
   }
   
   .medicina-subtext {
     color: #611232;
     margin-top: 10px;
-    font-family: 'NotoSans_ExtraCondensed-Black';
+    font-family: 'NotoSans_Condensed-Thin';
   }
   
   .medicina-footer {
@@ -63,7 +63,7 @@
   max-width: 960px;
   margin: 2rem auto;
   padding: 2rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'NotoSans_Condensed-Thin';
   color: #2c3e50;
   background: #fff;              /* Fondo blanco */
   border-radius: 18px;           /* Bordes redondeados */

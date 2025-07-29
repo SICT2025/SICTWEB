@@ -1,4 +1,4 @@
-// OrganigramaPage.jsx
+
 import React, { useState } from 'react';
 import '../assets/styles/pages/OrganigramaPage.css';
 import organigrama from '../assets/imagenes/organigrama.jpg';
