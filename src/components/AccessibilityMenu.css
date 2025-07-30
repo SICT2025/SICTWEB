@@ -77,6 +77,17 @@
   font-weight: 500;
   word-break: break-word;
 }
+.accessibility-toggle {
+  background-color: transparent;
+  border: none;
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: none;
+}
+.accessibility-toggle:focus {
+  outline: none;
+}
 
 /* Botón restablecer */
 .accessibility-btn.reset {
@@ -144,7 +155,7 @@
 .screen-reader-controls button[aria-pressed="true"],
 .screen-reader-controls button.active {
   background: #611232;
-  color: #fff;
+  color: #ffffff;
 }
 
 .screen-reader-controls button:hover,
