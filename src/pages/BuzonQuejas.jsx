@@ -31,9 +31,9 @@ export default function BuzonQuejas() {
 
   return (
     <div className="buzon-root">
-      {/* Contenedor principal */}
+      
       <div className="buzon-container">
-        {/* Columna izquierda: Descripción */}
+       
         <div className="buzon-info">
           <h1 className="buzon-title">Buzón de Quejas</h1>
           <p className="buzon-body">
@@ -58,7 +58,7 @@ export default function BuzonQuejas() {
           </div>
         </div>
         
-        {/* Columna derecha: Formulario */}
+        
         <form onSubmit={handleSubmit} className="buzon-form">
           <div className="form-group">
             <label className="buzon-body">

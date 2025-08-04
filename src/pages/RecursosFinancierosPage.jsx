@@ -3,7 +3,7 @@ import '../assets/styles/pages/RecursosFinancierosPage.css';
 import { useNavigate } from 'react-router-dom';
 
 function RecursosFinancierosPage() {
-  const navigate = useNavigate(); // <-- Agrega esta línea
+  const navigate = useNavigate(); 
 
   return (
     <div className="recursos-financieros-container">

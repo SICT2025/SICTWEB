@@ -1,9 +1,9 @@
 import React from 'react';
-import '../assets/styles/pages/RecursosFinancierosPage.css'; // Puedes reutilizar el CSS
+import '../assets/styles/pages/RecursosFinancierosPage.css';
 import { useNavigate } from 'react-router-dom';
 
 function DepartamentoHumanosPage() {
-  const navigate = useNavigate(); // <-- Agrega esta línea
+  const navigate = useNavigate(); 
 
   return (
     <div className="recursos-financieros-container">
