@@ -33,12 +33,24 @@ function AccessibilityToggle() {
         className="accessibility-toggle"
         aria-label="Opciones de accesibilidad"
         onClick={handleButtonClick}
+        style={{
+          background: '#b48d5a',
+          borderRadius: '50%',
+          width: 40,
+          height: 40,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          border: 'none',
+          padding: 0
+        }}
       >
-         {/* Ícono de accesibilidad SVG */}
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="#fff">
-          <circle cx="16" cy="16" r="16" fill="#b48d5a"/>
-          <path d="M16 7a2 2 0 110 4 2 2 0 010-4zm-7 5a1 1 0 011-1h12a1 1 0 011 1v1a2 2 0 01-2 2h-2v8h2a1 1 0 110 2h-8a1 1 0 110-2h2v-8h-2a2 2 0 01-2-2v-1z" fill="#fff"/>
-        </svg>
+        {/* Ícono de accesibilidad: silla de ruedas */}
+        <img
+          src={require('../assets/imagenes/accesibilidad-silla-ruedas.png')}
+          alt="Accesibilidad"
+          style={{ width: 28, height: 28, objectFit: 'contain', filter: 'invert(1)' }}
+        />
       </button>
       {open && <AccessibilityMenu onAction={handleActionSelected} />}
     </div>

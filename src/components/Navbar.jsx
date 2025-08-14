@@ -52,16 +52,11 @@ function Navbar() {
         </button>
 
         <ul className={`navbar-links ${mobileMenuOpen ? 'active' : ''}`}>
-          <li>
-            <Link to="/">Inicio</Link>
-          </li>
+
           <li>
             <AccessibilityToggle />
           </li>
-          <li><Link to="/juridico">Jurídico</Link></li>
-          <li><Link to="/mural">Mural</Link></li>
-          <li><Link to="/medicina">Medicina</Link></li>
-          <li><Link to="/subdireccion-obras">Subdirección de Obras</Link></li>
+
           <li
             className={`navbar-dropdown ${openDropdown ? 'active' : ''}`}
             onMouseEnter={!isMobile ? () => setOpenDropdown(true) : undefined}
@@ -71,21 +66,38 @@ function Navbar() {
               className="navbar-dropdown-btn" 
               onClick={toggleDropdown}
             >
-              Más opciones <span style={{fontSize: '1.1em'}}>▼</span>
+              Departametos <span style={{fontSize: '1.1em'}}>▼</span>
             </button>
             {(openDropdown || (!isMobile && openDropdown)) && (
               <ul className="navbar-dropdown-list">
-                <li><Link to="/serv-tecnicos">Servicios Técnicos</Link></li>
+
+                  <li><Link to="/juridico">Jurídico</Link></li>
+                <li><Link to="/medicina">Medicina</Link></li>
+                <li><Link to="/subdireccion-obras">Subdirección de Obras</Link></li>
+               <li><Link to="/serv-tecnicos">Servicios Técnicos</Link></li>
                 <li><Link to="/subtransporte">Subdirección de Transporte</Link></li>
                 <li><Link to="/subcomunicaciones">Subdirección de Comunicaciones</Link></li>
+
                 <li><Link to="/subadministracion">Subdirección de Administración</Link></li>
-                <li><Link to="/organigrama">Organigrama</Link></li>
+
                 <li><Link to="/comunicacion-social">Comunicación Social</Link></li>
-                <Link to="/mapa">Mapa</Link>
-                <li><Link to="/buzon-quejas">Buzón de Quejas y Sugerencias</Link></li>
+
               </ul>
             )}
           </li>
+             <li>
+            <Link to="/">Inicio</Link>
+          </li>
+          <li>
+            <Link to="/organigrama">Organigrama</Link>
+          </li>
+          <li>
+            <Link to="/mural">Mural</Link>
+          </li>
+                <li>
+            <Link to="/mapa">Mapa</Link>
+          </li>
+           <li><Link to="/buzon-quejas">Buzón de Quejas</Link></li>
         </ul>
       </div>
     </nav>
