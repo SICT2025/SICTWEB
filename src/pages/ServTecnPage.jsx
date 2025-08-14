@@ -69,7 +69,7 @@ function ServTecnPage() {
   <h3>Contacto</h3>
   <p>
     <strong>Nombre:</strong> Andres Reyes Hernandez<br />
-    <strong>Correo:</strong> <a href="ereyeshe@sct.gob.mx">ereyeshe@sct.gob.mx</a><br />
+    <strong>Correo:</strong> <a href="ereyeshe@sct.gob.mx">ereyeshe@sict.gob.mx</a><br />
     <strong>Teléfono:</strong> <a href="Tel:4734541100/01">4734541100/01</a><br />
     <strong>Extensión:</strong> 48493
   </p>

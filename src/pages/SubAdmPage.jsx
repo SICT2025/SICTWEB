@@ -52,7 +52,7 @@ function SubAdmPage() {
   <h3>Contacto</h3>
   <p>
     <strong>Nombre:</strong> Juan Francisco Salazar Reyes <br />
-    <strong>Correo:</strong> <a href="juan.salazar@sct.gob.mx"></a>juan.salazar@sct.gob.mx<br />
+    <strong>Correo:</strong> <a href="juan.salazar@sct.gob.mx"></a>juan.salazar@sict.gob.mx<br />
     <strong>Teléfono:</strong> <a href="Tel:4734541100/01">4734541100/01</a><br />
     <strong>Extensión:</strong> 48048
   </p>

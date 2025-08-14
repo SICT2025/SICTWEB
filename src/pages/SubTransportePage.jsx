@@ -156,7 +156,7 @@ function SubTransporte() {
   <h3>Contacto</h3>
   <p>
     <strong>Nombre:</strong> Efrain Palafox Martin<br />
-    <strong>Correo:</strong> <a href="apalafox@sct.gob.mx">apalafox@sct.gob.mx</a><br />
+    <strong>Correo:</strong> <a href="apalafox@sct.gob.mx">apalafox@sict.gob.mx</a><br />
     <strong>Teléfono:</strong> <a href="tel:4734541100">4734541100/01</a><br />
     <strong>Extensión:</strong> 48517
   </p>

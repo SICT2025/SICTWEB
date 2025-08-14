@@ -10,4 +10,4 @@ function AutotransporteCelayaPage() {
   );
 }
 
-export default AutotransporteCelayaPage;
+export default AutotransporteCelayaPage; 
