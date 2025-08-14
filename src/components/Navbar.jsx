@@ -66,7 +66,7 @@ function Navbar() {
               className="navbar-dropdown-btn" 
               onClick={toggleDropdown}
             >
-              Departametos <span style={{fontSize: '1.1em'}}>▼</span>
+              Departamentos <span style={{fontSize: '1.1em'}}>▼</span>
             </button>
             {(openDropdown || (!isMobile && openDropdown)) && (
               <ul className="navbar-dropdown-list">
