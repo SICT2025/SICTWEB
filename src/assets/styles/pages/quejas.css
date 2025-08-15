@@ -110,6 +110,8 @@
   cursor: not-allowed;
 }
 
+
+
 /* Media Queries para diseño responsivo */
 @media (max-width: 1024px) {
   .buzon-info, .buzon-form {
