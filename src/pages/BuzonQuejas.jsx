@@ -177,11 +177,8 @@ export default function BuzonQuejas() {
             <div style={{ marginTop: 16 }}>
               <p><strong>Folio generado:</strong> {folio}</p>
               <button type="button" onClick={handleDescargarPDF} className="buzon-button" style={{ marginRight: 10 }}>
-                Descargar PDF
+                Descargar Folio
               </button>
-              <Link to="/consulta-estatus-queja" className="buzon-button">
-                Consultar estatus
-              </Link>
             </div>
           )}
         </form>
