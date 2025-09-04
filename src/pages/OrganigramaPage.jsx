@@ -9,7 +9,7 @@ const contactos = [
     titulo: 'Dirección General',
     nombre: 'Mtra. Irma Leticia Gonzáles Sánchez',
     correo: 'irma.gonzalez@sict.gob.mx',
-    extension: '4800',
+    extension: '48000',
   },
   {
     titulo: 'Unidad de Asuntos Jurídicos',
@@ -25,7 +25,7 @@ const contactos = [
   },
   {
     titulo: 'Subdirección de Comunicaciones',
-    nombre: 'Juan Francisco Ibañez Solís',
+    nombre: 'Juan Enrique Ibañez Solís',
     correo: 'jibanezs@sict.gob.mx',
     extension: '48957',
   },
@@ -44,7 +44,7 @@ const contactos = [
   {
     titulo: 'Residencia General de Conservación',
     nombre: 'Eduardo Alfonso Chan Euan',
-    correo: 'echanehuan@sict.gob.mx',
+    correo: 'echanehua@sict.gob.mx',
     extension: '48101',
   },
   {
@@ -67,7 +67,7 @@ const contactos = [
   },
   {
     titulo: 'Subdirección de Transporte',
-    nombre: 'Efraín Palafox Martín',
+    nombre: 'Efraín Palafox Marin',
     correo: 'apalafox@sict.gob.mx',
     extension: '48517',
   },
