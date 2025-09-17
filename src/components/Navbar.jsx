@@ -98,6 +98,7 @@ function Navbar() {
             <Link to="/mapa">Mapa</Link>
           </li>
            <li><Link to="/buzon-quejas">Buzón de Quejas</Link></li>
+         <li><Link to="/comite-etica">Comite de Etica</Link></li>
         </ul>
       </div>
     </nav>

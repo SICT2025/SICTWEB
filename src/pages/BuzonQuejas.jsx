@@ -121,6 +121,15 @@ export default function BuzonQuejas() {
           <p className="buzon-body">
             Para poder tener un mejor manejo de tu queja favor de proporcionar tus datos de contacto (nombre, departamento, correo o número de teléfono). Tu información será tratada con la máxima confidencialidad y respeto.
           </p>
+          <a
+           href="https://drive.google.com/uc?export=download&id=1TEKqETmn-W1wd976SopklXMqdm_94pE_"
+          target="_blank"
+          rel="noopener noreferrer"
+         className="buzon-button"
+        style={{ marginTop: 16 }}
+            >
+          Descargar documento informativo
+          </a>
           <h2 className="buzon-subtitle">Quejas Laborales</h2>
           <p className="buzon-body">
             Si tienes algún problema relacionado con tus condiciones de trabajo, ambiente laboral, trato de superiores o compañeros, puedes presentar tu queja de manera confidencial.

@@ -1,77 +1,7 @@
 
 import React, { useState } from 'react';
 import '../assets/styles/pages/OrganigramaPage.css';
-import organigrama from '../assets/imagenes/organigrama.jpg';
-import ContactoDepartamento from '../components/ContactoDepartamento';
 
-const contactos = [
-  {
-    titulo: 'Dirección General',
-    nombre: 'Mtra. Irma Leticia Gonzáles Sánchez',
-    correo: 'irma.gonzalez@sict.gob.mx',
-    extension: '48000',
-  },
-  {
-    titulo: 'Unidad de Asuntos Jurídicos',
-    nombre: 'Edith Domínguez Hernández',
-    correo: 'edomingh@sict.gob.mx',
-    extension: '48008',
-  },
-  {
-    titulo: 'Informática',
-    nombre: 'Adrián Márquez Rangel',
-    correo: 'amarquer@sict.gob.mx',
-    extension: '48016 / 48018',
-  },
-  {
-    titulo: 'Subdirección de Comunicaciones',
-    nombre: 'Juan Enrique Ibañez Solís',
-    correo: 'jibanezs@sict.gob.mx',
-    extension: '48957',
-  },
-  {
-    titulo: 'Subdirección de Administraciones',
-    nombre: 'Juan Francisco Salazar Reyes',
-    correo: 'juan.salazar@sict.gob.mx',
-    extension: '48048',
-  },
-  {
-    titulo: 'Subdirección de Obras',
-    nombre: 'Raphael Barraza Mariscal',
-    correo: 'rbarraza@sict.gob.mx',
-    extension: '48093',
-  },
-  {
-    titulo: 'Residencia General de Conservación',
-    nombre: 'Eduardo Alfonso Chan Euan',
-    correo: 'echanehua@sict.gob.mx',
-    extension: '48101',
-  },
-  {
-    titulo: 'Residencia General de Carreteras Alimentadoras',
-    nombre: 'Luis Alfonso Morales Cazares',
-    correo: 'lmoralec@sict.gob.mx',
-    extension: '48325',
-  },
-  {
-    titulo: 'Residencia General de Carreteras Federales',
-    nombre: 'José de Jesús Ayala Madrigal',
-    correo: 'jayalam@sict.gob.mx',
-    extension: '48213',
-  },
-  {
-    titulo: 'Unidad General de Servicios Técnicos',
-    nombre: 'Eduardo Andrés Reyes Hernández',
-    correo: 'ereyeshe@sict.gob.mx',
-    extension: '48493',
-  },
-  {
-    titulo: 'Subdirección de Transporte',
-    nombre: 'Efraín Palafox Marin',
-    correo: 'apalafox@sict.gob.mx',
-    extension: '48517',
-  },
-];
 
 function OrganigramaPage() {
   const [zoom, setZoom] = useState(1);
@@ -92,30 +22,31 @@ function OrganigramaPage() {
       </div>
 
       <div className="organigrama-content">
-        <div className="organigrama-scroll-outer">
-          <div
-            className="organigrama-scroll-inner"
-            style={{ transform: `scale(${zoom})`, transformOrigin: 'top left' }}
-          >
-            <img
-              className="organigrama-image"
-              src={organigrama}
-              alt="Organigrama institucional"
-            />
-          </div>
+        <div className="iframe-container" style={{ transform: `scale(${zoom})`, transformOrigin: 'top left' }}>
+          <iframe
+            className="organigrama-slides-iframe"
+            
+src="https://docs.google.com/presentation/d/e/2PACX-1vTYKDwrYFV-LTEIPVOnxgEQi25Eu5Joapm-sdTxWhT91mqDClW-JVhtNmXMQ6MyKMBfDbb3Kzk5hcSN/embed?start=true&loop=true&delayms=60000&rm=minimal" frameborder="0" 
+            width="960"
+            height="535"
+            allowFullScreen
+            mozallowfullscreen="true"
+            webkitallowfullscreen="true"
+            title="Organigrama institucional"
+          ></iframe>
         </div>
-
-        <p id="organigrama-descripcion" className="organigrama-description">
-          Estructura organizacional de la dependencia.
-        </p>
+          <a
+           href="https://drive.google.com/uc?export=download&id=1TEKqETmn-W1wd976SopklXMqdm_94pE_"
+          target="_blank"
+          rel="noopener noreferrer"
+         className="buzon-button"
+        style={{ marginTop: 16 }}
+            >
+          Descargar Contactos de los Departamentos
+          </a>
       </div>
 
-      <div className="organigrama-contactos">
-        <h2>Contactos por Departamento</h2>
-        {contactos.map((c, index) => (
-          <ContactoDepartamento key={index} titulo={c.titulo} contacto={c} />
-        ))}
-      </div>
+    
     </div>
   );
 }

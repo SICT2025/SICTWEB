@@ -1,7 +1,7 @@
 import React from 'react';
 import '../assets/styles/pages/HomePage.css';
 import centro from '../assets/imagenes/centro.PNG';
-
+ 
 function HomePage() {
   return (
     <div className="home-bg">
@@ -15,16 +15,16 @@ function HomePage() {
           La SICT es la encargada de diseñar, planear, ejecutar y coordinar las políticas públicas en materia de medios de comunicación.
           Esto incluye la elaboración de programas para el desarrollo de bienes, servicios y pasajeros. No obstante, en el caso de las vías marítimas, ríos y lagos, deberá coordinarse con la Secretaría de Marina; conducir las estrategias gubernamentales en las áreas de telecomunicación y radiodifusión; operar Telecomm-Telégrafos, Correos de México, Aeropuertos y Servicios Auxiliares, caminos y puentes federales; otorgar, vigilar, renovar o retirar concesiones para la operación de medios de comunicación y transportes (aeropuertos, carreteras, vías férreas, etc.); dirigir la construcción de infraestructura pública para comunicaciones y transportes, y regular las características profesionales del personal que opere las vías generales de comunicación y transporte.
         </p>  
+ 
         <div className="home-image-container">
-          <img 
-            className="home-image" 
-            src={centro} 
-            alt="Centro SICT" 
+          <img
+            className="home-image"
+            src={centro}
+            alt="Centro SICT"
             loading="lazy"
           />
         </div>
-
-        
+ 
         <div className="contact-card-home">
           <h3>Contacto</h3>
           <p>
@@ -38,5 +38,5 @@ function HomePage() {
     </div>
   );
 }
-
+ 
 export default HomePage;

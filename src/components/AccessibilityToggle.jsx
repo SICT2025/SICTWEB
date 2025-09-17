@@ -47,7 +47,7 @@ function AccessibilityToggle() {
       >
         {/* Ícono de accesibilidad: silla de ruedas */}
         <img
-          src={require('../assets/imagenes/iconoa.png')}
+          src={require('../assets/imagenes/accesibilidad-silla-ruedas.png')}
           alt="Accesibilidad"
           style={{ width: 28, height: 28, objectFit: 'contain', filter: 'invert(1)' }}
         />
