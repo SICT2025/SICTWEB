@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -22,6 +22,7 @@ import UnidadLaboratoriosPage from './pages/UnidadLaboratoriosPage';
 import UnidadEstudiosPage from './pages/UnidadEstudiosPage';
 import UnidadVialidadProyectosPage from './pages/UnidadVialidadProyectosPage';
 import BuzonQuejas from './pages/BuzonQuejas';
+import ComiteEtica from './pages/EticaPage';
 import ConsultaEstatusQueja from './pages/ConsultaEstatusQueja';
 import FolioGenerado from './pages/FolioGenerado';
 import ComunicacionSocialPage from './pages/ComunicacionSocialPage';
@@ -32,6 +33,7 @@ import './App.css';
 import logos from './assets/imagenes/logos.png';
 import ReadingMask from './components/ReadingMask';
 import ReadingGuide from './components/ReadingGuide';
+import ModalEncuestaGenero from './components/ModalEncuestaGenero';
  
 // Inicializa Google Analytics solo en producción
 const initGA = () => {
@@ -47,7 +49,7 @@ const initGA = () => {
   }
 };
  
-// Hook para registrar page views SPA
+// Custom hook para registrar page views SPA (usa useLocation internamente)
 function usePageViews() {
   const location = useLocation();
  
@@ -63,12 +65,23 @@ function usePageViews() {
  
 function AppContent() {
   const { readingMask, readingGuide } = useAccessibility();
+ 
+  // Llamada al custom hook — debe ejecutarse dentro de un componente que esté dentro de <Router>
   usePageViews();
  
+  // --- Moved hooks inside the component (fix ESLint errors) ---
+  const [showEncuesta, setShowEncuesta] = useState(false);
+ 
+  useEffect(() => {
+    // Mostrar encuesta/modal al montar (ajusta la lógica si quieres mostrarlo condicionalmente)
+    setShowEncuesta(true);
+  }, []);
+  // ---------------------------------------------------------
+ 
   return (
-<>
-<Navbar />
-<div
+    <>
+      <Navbar />
+      <div
         style={{
           background: '#e6d194',
           padding: '10px',
@@ -77,8 +90,8 @@ function AppContent() {
           alignItems: 'center',
           overflow: 'hidden'
         }}
->
-<img
+      >
+        <img
           src={logos}
           alt="logos"
           className="header-logos-comunicaciones"
@@ -89,41 +102,49 @@ function AppContent() {
             objectFit: 'contain'
           }}
         />
-</div>
+      </div>
  
       <div className="main-content">
-<ReadingMask active={readingMask} />
-<ReadingGuide active={readingGuide} />
-<Routes>
-<Route path="/" element={<HomePage />} />
-<Route path="/juridico" element={<JuridicoPage />} />
-<Route path="/mapa" element={<MapaPage />} />
-<Route path="/medicina" element={<MedicinaPage />} />
-<Route path="/subdireccion-obras" element={<SubdireccionObrasPage />} />
-<Route path="/serv-tecnicos" element={<ServTecnPage />} />
-<Route path="/subtransporte" element={<SubTransportePage />} />
-<Route path="/subcomunicaciones" element={<SubComunicacionesPage />} />
-<Route path="/subadministracion" element={<SubAdmPage />} />
-<Route path="/organigrama" element={<OrganigramaPage />} />
-<Route path="/recursos-financieros" element={<RecursosFinancierosPage />} />
-<Route path="/departamento-humanos" element={<DepartamentoHumanosPage />} />
-<Route path="/departamento-materiales" element={<DepartamentoMaterialesPage />} />
-<Route path="/transporte-ferroviario" element={<TransporteFerroviarioPage />} />
-<Route path="/autotransporte-celaya" element={<AutotransporteCelayaPage />} />
-<Route path="/autotransporte-leon" element={<AutotransporteLeonPage />} />
-<Route path="/unidad-laboratorios" element={<UnidadLaboratoriosPage />} />
-<Route path="/unidad-estudios" element={<UnidadEstudiosPage />} />
-<Route path="/unidad-vialidad-proyectos" element={<UnidadVialidadProyectosPage />} />
-<Route path="/buzon-quejas" element={<BuzonQuejas />} />
-<Route path="/consulta-estatus-queja" element={<ConsultaEstatusQueja />} />
-<Route path="/folio-generado" element={<FolioGenerado />} />
-<Route path="/comunicacion-social" element={<ComunicacionSocialPage />} />
-<Route path="/mural" element={<MuralInteractivoPage />} />
-<Route path="/encuesta-genero" element={<EncuestaGenero />} />
-</Routes>
-</div>
-<Footer />
-</>
+        <ReadingMask active={readingMask} />
+        <ReadingGuide active={readingGuide} />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/juridico" element={<JuridicoPage />} />
+          <Route path="/mapa" element={<MapaPage />} />
+          <Route path="/medicina" element={<MedicinaPage />} />
+          <Route path="/subdireccion-obras" element={<SubdireccionObrasPage />} />
+          <Route path="/serv-tecnicos" element={<ServTecnPage />} />
+          <Route path="/subtransporte" element={<SubTransportePage />} />
+          <Route path="/subcomunicaciones" element={<SubComunicacionesPage />} />
+          <Route path="/subadministracion" element={<SubAdmPage />} />
+          <Route path="/organigrama" element={<OrganigramaPage />} />
+          <Route path="/recursos-financieros" element={<RecursosFinancierosPage />} />
+          <Route path="/departamento-humanos" element={<DepartamentoHumanosPage />} />
+          <Route path="/departamento-materiales" element={<DepartamentoMaterialesPage />} />
+          <Route path="/transporte-ferroviario" element={<TransporteFerroviarioPage />} />
+          <Route path="/autotransporte-celaya" element={<AutotransporteCelayaPage />} />
+          <Route path="/autotransporte-leon" element={<AutotransporteLeonPage />} />
+          <Route path="/unidad-laboratorios" element={<UnidadLaboratoriosPage />} />
+          <Route path="/unidad-estudios" element={<UnidadEstudiosPage />} />
+          <Route path="/unidad-vialidad-proyectos" element={<UnidadVialidadProyectosPage />} />
+          <Route path="/buzon-quejas" element={<BuzonQuejas />} />
+          <Route path="/consulta-estatus-queja" element={<ConsultaEstatusQueja />} />
+          <Route path="/folio-generado" element={<FolioGenerado />} />
+          <Route path="/comunicacion-social" element={<ComunicacionSocialPage />} />
+          <Route path="/mural" element={<MuralInteractivoPage />} />
+          <Route path="/encuesta-genero" element={<EncuestaGenero />} />
+          <Route path="/comite-etica" element={<ComiteEtica />} />
+        </Routes>
+ 
+        {/* Modal de encuesta: paso onClose para poder ocultarlo */}
+        <ModalEncuestaGenero
+          open={showEncuesta}
+          show={showEncuesta}
+          onClose={() => setShowEncuesta(false)}
+        />
+      </div>
+      <Footer />
+    </>
   );
 }
  
@@ -141,9 +162,9 @@ function App() {
   }, []);
  
   return (
-<Router>
-<AppContent />
-</Router>
+    <Router>
+      <AppContent />
+    </Router>
   );
 }
  

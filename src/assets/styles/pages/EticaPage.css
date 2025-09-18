@@ -1,0 +1,122 @@
+.etica-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 32px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(44,62,80,0.10);
+  font-family: 'NotoSans_Condensed-Thin', Arial, sans-serif;
+}
+
+.etica-container h1 {
+  color: #8a0047;
+  margin-bottom: 24px;
+  font-size: 2.5rem;
+  font-family: 'Patria_Light', Arial, sans-serif;
+}
+
+.etica-container h2 {
+  color: #1e5b4f;
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+}
+
+.etica-container p {
+  margin-bottom: 24px;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.etica-container ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 32px;
+}
+
+.etica-container li {
+  margin-bottom: 12px;
+}
+
+.etica-container a {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+
+.etica-container a[href*="drive.google.com"] {
+  color: #611232;
+}
+
+.etica-container a[href*="drive.google.com"]:hover {
+  color: #8a0047;
+}
+
+.etica-container a[href*="folders"] {
+  color: #9b2247;
+}
+
+.etica-container a[href*="folders"]:hover {
+  color: #1e5b4f;
+}
+.etica-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 32px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(44,62,80,0.10);
+  font-family: 'NotoSans_Condensed-Thin', Arial, sans-serif;
+}
+
+.etica-container h1 {
+  color: #8a0047;
+  margin-bottom: 24px;
+  font-size: 2.5rem;
+  font-family: 'Patria_Light', Arial, sans-serif;
+}
+
+.etica-container h2 {
+  color: #1e5b4f;
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+}
+
+.etica-container p {
+  margin-bottom: 24px;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.etica-container ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 32px;
+}
+
+.etica-container li {
+  margin-bottom: 12px;
+}
+
+.etica-container a {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+
+.etica-container a[href*="drive.google.com"] {
+  color: #611232;
+}
+
+.etica-container a[href*="drive.google.com"]:hover {
+  color: #8a0047;
+}
+
+.etica-container a[href*="folders"] {
+  color: #9b2247;
+}
+
+.etica-container a[href*="folders"]:hover {
+  color: #1e5b4f;
+}

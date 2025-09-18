@@ -36,13 +36,13 @@ src="https://docs.google.com/presentation/d/e/2PACX-1vTYKDwrYFV-LTEIPVOnxgEQi25E
           ></iframe>
         </div>
           <a
-           href="https://drive.google.com/uc?export=download&id=1TEKqETmn-W1wd976SopklXMqdm_94pE_"
-          target="_blank"
-          rel="noopener noreferrer"
-         className="buzon-button"
-        style={{ marginTop: 16 }}
-            >
-          Descargar Contactos de los Departamentos
+            href="https://drive.google.com/uc?export=download&id=1exTZTeV9ZcovYl8xF2Dc21bZP0XF8zj3"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="organigrama-button"
+            style={{ marginTop: 16 }}
+          >
+            Descargar Contactos de los Departamentos
           </a>
       </div>
 
