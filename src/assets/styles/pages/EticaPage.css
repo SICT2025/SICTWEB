@@ -1,3 +1,24 @@
+.etica-politica {
+  color: #1e5b4f;
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+}
+.etica-desc {
+  margin-bottom: 24px;
+}
+
+.etica-codigo {
+  margin-bottom: 24px;
+}
+
+.etica-lista {
+  margin-bottom: 18px;
+}
+
+.etica-descripcion {
+  font-size: 0.95rem;
+  color: #444;
+}
 .etica-container {
   max-width: 800px;
   margin: 40px auto;
