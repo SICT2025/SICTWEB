@@ -48,16 +48,7 @@ function SubAdmPage() {
         <li>Controlar y autorizar el registro y certificación de la documentación oficial para el trámite de préstamos a corto plazo, hipotecarios, pensiones y jubilaciones que solicite el personal adscrito.</li>
         <li>Programar y coordinar la capacitación del personal del centro SICT, así como su evaluación y seguimiento.</li>
       </ul>
-             <div className="contact-card">
-  <h3>Contacto</h3>
-  <p>
-    <strong>Nombre:</strong> Juan Francisco Salazar Reyes <br />
-    <strong>Correo:</strong> <a href="juan.salazar@sct.gob.mx"></a>juan.salazar@sict.gob.mx<br />
-    <strong>Teléfono:</strong> <a href="Tel:4734541100/01">4734541100/01</a><br />
-    <strong>Extensión:</strong> 48048
-  </p>
-</div>
-     
+    
     </div>
   );
 }

@@ -20,16 +20,6 @@ function SubComunicacionesPage() {
         </li>
         <li>Coordinación al recabar información de acciones que han llevado a cabo las diferentes áreas de este centro, enviando dicha información a oficinas centrales.</li>
       </ul>
-
-            <div className="contact-card">
-  <h3>Contacto</h3>
-  <p>
-    <strong>Nombre:</strong> Juan Francisco Ibañez Solis <br />
-    <strong>Correo:</strong> <a href="jibanezs@sct.gob.mx"></a>jibanezs@sict.gob.mx<br />
-    <strong>Teléfono:</strong> <a href="Tel:4734541100/01">4734541100/01</a><br />
-    <strong>Extensión:</strong> 48957
-  </p>
-</div>
     </div>
   );
 }

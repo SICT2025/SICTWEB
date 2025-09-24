@@ -25,15 +25,6 @@ function HomePage() {
           />
         </div>
  
-        <div className="contact-card-home">
-          <h3>Contacto</h3>
-          <p>
-            <strong>Dirección General:</strong> Mtra. Irma Leticia Gonzáles Sánchez<br />
-            <strong>Correo:</strong> <a href="mailto:irma.gonzalez@sict.gob.mx">irma.gonzalez@sict.gob.mx</a><br />
-            <strong>Teléfono:</strong> <a href="tel:4734541100">4734541100/01</a><br />
-            <strong>Extensión:</strong> 48000
-          </p>
-        </div>
       </div>
     </div>
   );
