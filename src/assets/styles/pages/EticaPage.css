@@ -141,3 +141,34 @@
 .etica-container a[href*="folders"]:hover {
   color: #1e5b4f;
 }
+.etica-carrusel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 32px 0 0 0;
+  gap: 16px;
+}
+
+.etica-carrusel-img {
+  max-width: 720px;
+  max-height: 720px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #e6d194;
+  object-fit: contain;
+}
+
+.etica-carrusel-btn {
+  background: #8a0047;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.etica-carrusel-btn:hover {
+  background: #611232;
+}
