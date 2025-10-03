@@ -12,9 +12,6 @@ import SubTransportePage from './pages/SubTransportePage';
 import SubComunicacionesPage from './pages/SubComunicacionesPage';
 import SubAdmPage from './pages/SubAdmPage';
 import OrganigramaPage from './pages/OrganigramaPage';
-import RecursosFinancierosPage from './pages/RecursosFinancierosPage';
-import DepartamentoHumanosPage from './pages/DepartamentoHumanosPage';
-import DepartamentoMaterialesPage from './pages/DepartamentoMaterialesPage';
 import TransporteFerroviarioPage from './pages/TransporteFerroviarioPage';
 import AutotransporteCelayaPage from './pages/AutotransporteCelayaPage';
 import AutotransporteLeonPage from './pages/AutotransporteLeonPage';
@@ -118,9 +115,6 @@ function AppContent() {
           <Route path="/subcomunicaciones" element={<SubComunicacionesPage />} />
           <Route path="/subadministracion" element={<SubAdmPage />} />
           <Route path="/organigrama" element={<OrganigramaPage />} />
-          <Route path="/recursos-financieros" element={<RecursosFinancierosPage />} />
-          <Route path="/departamento-humanos" element={<DepartamentoHumanosPage />} />
-          <Route path="/departamento-materiales" element={<DepartamentoMaterialesPage />} />
           <Route path="/transporte-ferroviario" element={<TransporteFerroviarioPage />} />
           <Route path="/autotransporte-celaya" element={<AutotransporteCelayaPage />} />
           <Route path="/autotransporte-leon" element={<AutotransporteLeonPage />} />

@@ -74,14 +74,13 @@ function Navbar() {
             </button>
             {(openDropdown || (!isMobile && openDropdown)) && (
               <ul className="navbar-dropdown-list">
-                <li><Link to="/juridico">Jurídico</Link></li>
-                <li><Link to="/medicina">Medicina</Link></li>
+                <li><Link to="/juridico">Dirección General</Link></li>
                 <li><Link to="/subdireccion-obras">Subdirección de Obras</Link></li>
-                <li><Link to="/serv-tecnicos">Servicios Técnicos</Link></li>
-                <li><Link to="/subtransporte">Subdirección de Transporte</Link></li>
-                <li><Link to="/subcomunicaciones">Subdirección de Comunicaciones</Link></li>
-                <li><Link to="/subadministracion">Subdirección de Administración</Link></li>
-                <li><Link to="/comunicacion-social">Comunicación Social</Link></li>
+		            <li><Link to="/subadministracion">Subdirección de Administración</Link></li>
+		            <li><Link to="/subtransporte">Subdirección de Transporte</Link></li>
+		            <li><Link to="/juridico">Unidad de Asuntos Jurídicos</Link></li>
+                <li><Link to="/serv-tecnicos">Unidad General de Servicios Técnicos</Link></li>
+                
               </ul>
             )}
           </li>
