@@ -1,9 +1,50 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/styles/pages/SubTransportePage.css';
 
+const departamentos = [
+  {
+    key: 'autotransporte-federal',
+    titulo: 'Departamento de Autotransporte Federal',
+    ficha: (
+      <>
+        <p>
+          Regula, supervisa y controla el transporte federal de pasajeros, turismo y carga. Otorga permisos, licencias y autorizaciones; además, vigila el cumplimiento de las normas en materia de seguridad, operación y servicio del autotransporte federal.
+        </p>
+      </>
+    ),
+  },
+  {
+    key: 'medicina-preventiva',
+    titulo: 'Unidad de Protección y Medicina Preventiva',
+    ficha: (
+      <>
+        <p>
+          Su labor es garantizar la seguridad y salud de los trabajadores y usuarios en el sector transporte. Realiza acciones de medicina preventiva, exámenes psicofísicos integrales y programas de protección para conductores del autotransporte federal, con el fin de reducir riesgos en carretera.
+        </p>
+      </>
+    ),
+  },
+  {
+    key: 'transporte-ferroviario',
+    titulo: 'Departamento de Transporte Ferroviario',
+    ficha: (
+      <>
+        <p>
+          Coordina y supervisa las operaciones relacionadas con el sistema ferroviario. Regula concesiones, permisos y el uso de la infraestructura ferroviaria, además de vigilar la seguridad, eficiencia y modernización del transporte de carga y pasajeros en este sector.
+        </p>
+      </>
+    ),
+  }
+];
 
 function SubTransporte() {
+  const [fichaAbierta, setFichaAbierta] = useState(null);
+
+  const handleFicha = (key) => {
+    setFichaAbierta(fichaAbierta === key ? null : key);
+  };
+
   return (
     <div className="transporte-container">
       <h1 className="transporte-title">Subdirección de Transporte</h1>
@@ -14,29 +55,27 @@ function SubTransporte() {
           La subdirección de transporte está a cargo del Lic. Juan Francisco Salazar Reyes, la cual
           tiene 4 departamentos:
         </h3>
-        <ul>
-          <li>
-            <Link to="/transporte-ferroviario">
-              Departamento de Transporte Ferroviario
-            </Link>
-          </li>
-          <li>
-            <Link to="/autotransporte-celaya">
-              Departamento de Autotransporte Federal "Celaya"
-            </Link>
-          </li>
-          <li>
-            <Link to="/autotransporte-leon">
-              Departamento de Autotransporte Federal "León"
-            </Link>
-          </li>
-          <li>
-            <Link to="/medicina">
-              Unidad de Protección y Medicina Preventiva
-            </Link>
-          </li>
-        </ul>
+        <div className="transporte-acordeon">
+          {departamentos.map((dep) => (
+            <div key={dep.key} className="transporte-acordeon-item">
+              <button
+                className={`transporte-acordeon-btn${fichaAbierta === dep.key ? ' active' : ''}`}
+                onClick={() => handleFicha(dep.key)}
+              >
+                {dep.titulo}
+                <span className="transporte-acordeon-icon">{fichaAbierta === dep.key ? '👍' : '👇'}</span>
+              </button>
+              {fichaAbierta === dep.key && (
+                <div className="transporte-acordeon-panel">
+                  {dep.ficha}
+                  
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
 
+        {/* ...resto del contenido original... */}
         <h3>
           El licenciado a cargo es responsable de que los permisos o trámites sean aceptados,
           principalmente los relacionados con licencias federales para conductores.

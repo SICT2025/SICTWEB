@@ -10,7 +10,7 @@ const fichas = {
         Se encarga de la administración, selección, contratación, capacitación y control del personal del centro SICT. Atiende trámites de nómina, licencias, prestaciones sociales y expedición de constancias.
         <br /><br />
         <strong>Funciones principales:</strong>
-        <ul style={{ marginTop: 8 }}>
+        <ul style={{ marginTop: 8 , fontFamily: 'NotoSans_Condensed-Thin', lineHeight: 1.6}}>
           <li>Reclutamiento, selección y contratación de personal conforme a normas y presupuesto.</li>
           <li>Elaboración de constancias de nombramiento y contratos para personal eventual.</li>
           <li>Expedición y trámite de certificaciones por servicio activo y hojas de servicio.</li>

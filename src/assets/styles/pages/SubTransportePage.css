@@ -125,4 +125,69 @@
   text-decoration: underline;
 }
 
-  
+  .transporte-acordeon {
+  margin-top: 24px;
+}
+
+.transporte-acordeon-item {
+  margin-bottom: 12px;
+}
+
+.transporte-acordeon-btn {
+  width: 100%;
+  text-align: left;
+  background: #f8f6fa;
+  color: #611232;
+  border: 1px solid #e6d194;
+  border-radius: 8px;
+  padding: 16px 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background 0.2s, border 0.2s;
+}
+
+.transporte-acordeon-btn.active,
+.transporte-acordeon-btn:hover {
+  background: #fff;
+  border-color: #8a0047;
+}
+
+.transporte-acordeon-icon {
+  font-size: 1.3rem;
+  margin-left: 12px;
+}
+
+.transporte-acordeon-panel {
+  background: #fff;
+  border: 1px solid #e6d194;
+  border-radius: 8px;
+  margin-top: 4px;
+  padding: 18px 24px;
+  box-shadow: 0 2px 8px rgba(138,0,71,0.08);
+  animation: fadeIn 0.3s;
+}
+
+.transporte-acordeon-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #fff;
+  background: #8a0047;
+  padding: 6px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.transporte-acordeon-link:hover {
+  background: #611232;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-8px);}
+  to { opacity: 1; transform: translateY(0);}
+}

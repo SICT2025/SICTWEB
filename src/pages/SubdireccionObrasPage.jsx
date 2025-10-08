@@ -1,30 +1,88 @@
-import React from 'react';
-
+import React, { useState } from 'react';
 import '../assets/styles/pages/SubdireccionObrasPage.css';
 
+const residencias = [
+  {
+    key: 'carreteras-federales',
+    titulo: 'Residencia General de Carreteras Federales',
+    ficha: (
+      <>
+        <p>
+          Se encarga de la planeación, supervisión y control de los proyectos de construcción, modernización y mantenimiento de la red de carreteras federales. Su función principal es garantizar que la infraestructura cumpla con los estándares técnicos y de seguridad establecidos.
+        </p>
+      </>
+    ),
+  },
+  {
+    key: 'conservacion',
+    titulo: 'Residencia General de Conservación',
+    ficha: (
+      <>
+        <p>
+          Tiene como objetivo preservar en buen estado las carreteras federales existentes. Supervisa trabajos de conservación rutinaria y periódica (bacheo, señalamiento, limpieza, deshierbe, mantenimiento de puentes y estructuras) para asegurar la movilidad y seguridad de los usuarios.
+        </p>
+      </>
+    ),
+  },
+  {
+    key: 'carreteras-alimentadoras',
+    titulo: 'Residencia General de Carreteras Alimentadoras',
+    ficha: (
+      <>
+        <p>
+          Coordina y supervisa los proyectos de construcción y modernización de carreteras alimentadoras, que conectan a localidades rurales y centros de producción con la red federal de carreteras, fomentando la integración regional y el desarrollo económico local.
+        </p>
+      </>
+    ),
+  },
+  {
+    key: 'contratos-estimaciones',
+    titulo: 'Departamento de Contratos y Estimaciones',
+    ficha: (
+      <>
+        <p>
+          Se encarga de la gestión administrativa y técnica de los contratos de obra y servicios relacionados con la infraestructura. Supervisa la elaboración, revisión y control de estimaciones de avance físico y financiero, asegurando el correcto uso de los recursos públicos.
+        </p>
+      </>
+    ),
+  },
+];
+
 function SubdireccionObras() {
+  const [fichaAbierta, setFichaAbierta] = useState(null);
+
+  const handleFicha = (key) => {
+    setFichaAbierta(fichaAbierta === key ? null : key);
+  };
+
   return (
     <div className="obras-container">
       <h1 className="obras-title">Subdirección de Obras</h1>
       <hr className="obras-divider" />
 
       <section className="obras-section">
-        <h2>Cuenta con tres residencias:</h2>
-        <ul>
-          <li>Residencia general de carreteras federales.</li>
-          <li>Residencia general de conservación.</li>
-          <li>Residencia general de carreteras alimentadoras.</li>
-        </ul>
+        <h2>Departamentos y residencias:</h2>
+        <div className="obras-acordeon">
+          {residencias.map((res) => (
+            <div key={res.key} className="obras-acordeon-item">
+              <button
+                className={`obras-acordeon-btn${fichaAbierta === res.key ? ' active' : ''}`}
+                onClick={() => handleFicha(res.key)}
+              >
+                {res.titulo}
+                <span className="obras-acordeon-icon">{fichaAbierta === res.key ? '👍' : '👇'}</span>
+              </button>
+              {fichaAbierta === res.key && (
+                <div className="obras-acordeon-panel">
+                  {res.ficha}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
 
-        <p className="obras-section">
-          Coordina las acciones relacionadas con la contratación de obra pública en la red carretera
-          (conservación de carretera, construcción y supervisión de nuevas carreteras, ampliaciones,
-          construcciones de puentes y mantenimiento de dicha obra, así como la supervisión y
-          construcción en los caminos de terracería), mediante las modalidades de licitación pública,
-          invitación a mínimo tres proveedores o adjudicación directa.
-        </p>
-
-        <h2>Procedimientos para la construcción de obras públicas:</h2>
+        {/* ...resto del contenido original... */}
+        <h2 style={{ marginTop: 32 }}>Procedimientos para la construcción de obras públicas:</h2>
         <ul>
           <li>Por contrato.</li>
           <li>Por administración.</li>
