@@ -52,7 +52,7 @@ function SubTransporte() {
 
       <section className="transporte-section">
         <h3>
-          La subdirección de transporte está a cargo del Lic. Juan Francisco Salazar Reyes, la cual
+          La subdirección de transporte está a cargo del LCP. Efrain Palafox Marín, la cual
           tiene 4 departamentos:
         </h3>
         <div className="transporte-acordeon">
