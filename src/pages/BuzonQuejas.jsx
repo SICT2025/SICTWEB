@@ -122,7 +122,7 @@ export default function BuzonQuejas() {
             Para poder tener un mejor manejo de tu queja favor de proporcionar tus datos de contacto (nombre, departamento, correo o número de teléfono). Tu información será tratada con la máxima confidencialidad y respeto.
           </p>
           <a
-           href="https://drive.google.com/uc?export=download&id=1TEKqETmn-W1wd976SopklXMqdm_94pE_"
+           href="https://drive.google.com/drive/folders/1D_GNbl7aQRTFI2HAyoCJ2r7_yAY9GYdI?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
          className="buzon-button"

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/styles/pages/HomePage.css';
-import centro from '../assets/imagenes/sict.png';
+import centro from '../assets/imagenes/sict.png'; //Este es para la imagen del centro SICT no del logo
  
 function HomePage() {
   return (
