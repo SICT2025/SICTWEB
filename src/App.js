@@ -22,7 +22,7 @@ import MuralInteractivoPage from './pages/MuralInteractivoPage';
 import EncuestaGenero from "./pages/EncuestaGenero";
 import { useAccessibility } from './context/AccessibilityContext';
 import './App.css';
-import logos from './assets/imagenes/logos.png';
+import logos from './assets/imagenes/logosss.png';
 import ReadingMask from './components/ReadingMask';
 import ReadingGuide from './components/ReadingGuide';
 import ModalEncuestaGenero from './components/ModalEncuestaGenero';

@@ -99,7 +99,7 @@ function AccessibilityMenu({ onAction }) {
         </span>
         <span className="accessibility-btn-text">Guía de Lectura</span>
       </button>
-
+   
       <button className="accessibility-btn" onClick={() => handleClick(() => setDyslexiaFont(f => !f))}>
         <span className="accessibility-btn-icon">
           <svg width="28" height="28" fill="#fff" viewBox="0 0 24 24">
