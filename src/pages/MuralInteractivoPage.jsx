@@ -39,14 +39,14 @@ function MuralInteractivoPage() {
     <div className="mural-page">
       <div className="iframe-container">
         <iframe
-          src="https://docs.google.com/presentation/d/e/2PACX-1vQyi38jmA4VrAAiAmQvlU9-5hVtR9eweyfGNIlFgunW44wCuJnzn45yoTwHHtIxcWOfqeVSYSH6odBH/embed?start=true&loop=true&delayms=3000&rm=minimal"
-          frameBorder="0"
-          width="960"
-          height="569"
-          allowFullScreen
-          mozallowfullscreen="true"
-          webkitallowfullscreen="true"
-        ></iframe>
+src="https://docs.google.com/presentation/d/e/2PACX-1vQyi38jmA4VrAAiAmQvlU9-5hVtR9eweyfGNIlFgunW44wCuJnzn45yoTwHHtIxcWOfqeVSYSH6odBH/embed?start=true&loop=true&delayms=10000&rm=minimal" 
+	 frameBorder="0"
+        width="960" 
+	height="569" 
+	allowFullscreen  
+	mozallowfullscreen="true" 
+	webkitallowfullscreen="true"
+	></iframe>
       </div>
 
       {/* Sección de comentarios */}
