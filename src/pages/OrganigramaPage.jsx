@@ -36,7 +36,7 @@ src="https://docs.google.com/presentation/d/e/2PACX-1vTYKDwrYFV-LTEIPVOnxgEQi25E
           ></iframe>
         </div>
           <a
-            href="https://drive.google.com/uc?export=download&id=1exTZTeV9ZcovYl8xF2Dc21bZP0XF8zj3"
+            href="https://drive.google.com/file/d/1exTZTeV9ZcovYl8xF2Dc21bZP0XF8zj3/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             className="organigrama-button"
