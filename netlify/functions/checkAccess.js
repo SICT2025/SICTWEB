@@ -4,6 +4,8 @@
  
 const allowedList = [
   "187.218.62.217", 
+  "187.162.219.242", 
+  "187.162.103.147", 
 ];
  
 function ipToInt(ip) {
