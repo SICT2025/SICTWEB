@@ -1,63 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="Sistema de información de la Secretaría de Infraestructura, Comunicaciones y Transportes" />
- 
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Sistema de información de la Secretaría de Infraestructura, Comunicaciones y Transportes" />
+
   <link rel="shortcut icon" type="image/x-icon" href="%PUBLIC_URL%/imagenes/icono.jpg" />
- 
   <title>SICT-GTO</title>
- 
+
   <!-- 🔒 Protección por IP -->
-<style id="block-style">#root{display:none !important;}</style>
-<script>
-  (async function(){
-    const res = await fetch("/.netlify/functions/checkAccess");
-    if(res.status === 200){
-      // permitido -> mostrar React
-      const s=document.getElementById("block-style");
-      if(s) s.remove();
-    } else {
-      // bloqueado -> reemplazar todo el HTML con mensaje
-      const txt = await res.text();
-      document.documentElement.innerHTML = `
-<head>
-<meta charset="utf-8">
-<title>Acceso restringido</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<style>
-            body {display:flex;align-items:center;justify-content:center;height:100vh;margin:0;font-family:system-ui,Arial,sans-serif;background:#fff;color:#111;}
-</style>
-</head>
-<body>${txt}</body>
-      `;
-    }
-  })();
-</script>
-<!-- Fin protección por IP -->
- 
+  <style id="block-style">#root{display:none !important;}</style>
+  <script>
+    (async function() {
+      try {
+        const res = await fetch("/.netlify/functions/checkAccess");
+        const data = await res.json();
+
+        if (data.allowed) {
+          // ✅ IP permitida → muestra la app React
+          const styleTag = document.getElementById("block-style");
+          if (styleTag) styleTag.remove();
+        } else {
+          // 🚫 IP bloqueada → reemplaza el contenido
+          document.body.innerHTML = `
+            <div style="
+              display:flex;
+              align-items:center;
+              justify-content:center;
+              height:100vh;
+              margin:0;
+              background-color:#e6d194;
+              color:#611232;
+              font-family:sans-serif;
+              text-align:center;
+            ">
+              <div>
+                <h2>Acceso restringido</h2>
+                <p>Tu IP (<b>${data.ip || 'desconocida'}</b>) no tiene permiso para acceder a esta página.</p>
+              </div>
+            </div>
+          `;
+        }
+      } catch (err) {
+        console.error('Error al verificar acceso:', err);
+        document.body.innerHTML = `
+          <div style="
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            height:100vh;
+            margin:0;
+            background-color:#e6d194;
+            color:#611232;
+            font-family:sans-serif;
+            text-align:center;
+          ">
+            <div>
+              <h2>Error de conexión</h2>
+              <p>No se pudo verificar el acceso. Intenta recargar la página.</p>
+            </div>
+          </div>
+        `;
+      }
+    })();
+  </script>
+  <!-- 🔒 Fin protección por IP -->
+
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HXPVCHG0F2"></script>
-<script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HXPVCHG0F2"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-HXPVCHG0F2');
-</script>
- 
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
- 
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-<meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow">
 </head>
 <body>
-<noscript>
+  <noscript>
     Necesitas habilitar JavaScript para ejecutar esta aplicación.
-</noscript>
-<div id="root"></div>
+  </noscript>
+  <div id="root"></div>
 </body>
 </html>
+ 
