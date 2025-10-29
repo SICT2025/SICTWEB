@@ -12,8 +12,14 @@ function HomePage() {
         </h1>
         <hr className="home-divider" />
         <p className="home-description">
-          La SICT es la encargada de diseñar, planear, ejecutar y coordinar las políticas públicas en materia de medios de comunicación.
-          Esto incluye la elaboración de programas para el desarrollo de bienes, servicios y pasajeros. No obstante, en el caso de las vías marítimas, ríos y lagos, deberá coordinarse con la Secretaría de Marina; conducir las estrategias gubernamentales en las áreas de telecomunicación y radiodifusión; operar Telecomm-Telégrafos, Correos de México, Aeropuertos y Servicios Auxiliares, caminos y puentes federales; otorgar, vigilar, renovar o retirar concesiones para la operación de medios de comunicación y transportes (aeropuertos, carreteras, vías férreas, etc.); dirigir la construcción de infraestructura pública para comunicaciones y transportes, y regular las características profesionales del personal que opere las vías generales de comunicación y transporte.
+          ¿Qué hacemos?
+MISIÓN:
+Instrumentar políticas públicas que impulsen el desarrollo económico, nacional y regional, mediante la expansión de infraestructura eficiente, sustentable, segura, incluyente y resiliente, así como la ampliación de la cobertura y mejora constante de la calidad, operación y oportunidad de los servicios de comunicaciones y transportes en beneficio de la población.
+VISIÓN:
+Ser una Secretaría que genera las condiciones para que la prestación de servicios públicos de comunicaciones y transportes cubra las necesidades de los usuarios en las mejores condiciones de oportunidad, calidad y operación, mediante el desarrollo de infraestructura.
+
+https://www.gob.mx/sct/es/archivo/acciones_y_programas
+
         </p>  
  
         <div className="home-image-container">
