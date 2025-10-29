@@ -12,15 +12,17 @@ function HomePage() {
         </h1>
         <hr className="home-divider" />
         <p className="home-description">
-MISIÓN:
+<h2>MISIÓN:</h2>
 Instrumentar políticas públicas que impulsen el desarrollo económico, nacional y regional, mediante la expansión de infraestructura eficiente, sustentable, segura, incluyente y resiliente, así como la ampliación de la cobertura y mejora constante de la calidad, operación y oportunidad de los servicios de comunicaciones y transportes en beneficio de la población.
- VISIÓN:
-Ser una Secretaría que genera las condiciones para que la prestación de servicios públicos de comunicaciones y transportes cubra las necesidades de los usuarios en las mejores condiciones de oportunidad, calidad y operación, mediante el desarrollo de infraestructura.
-
-https://www.gob.mx/sct/es/archivo/acciones_y_programas
-
         </p>  
- 
+<h2>VISIÓN:</h2>
+<p className="home-description">
+Ser una Secretaría que genera las condiciones para que la prestación de servicios públicos de comunicaciones y transportes cubra las necesidades de los usuarios en las mejores condiciones de oportunidad, calidad y operación, mediante el desarrollo de infraestructura.
+</p>
+<p className="home-description">
+https://www.gob.mx/sct/es/archivo/acciones_y_programas
+</p>
+
         <div className="home-image-container">
           <img
             className="home-image"
