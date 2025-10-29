@@ -20,7 +20,12 @@ Instrumentar políticas públicas que impulsen el desarrollo económico, naciona
 <p className="home-description">
 Ser una Secretaría que genera las condiciones para que la prestación de servicios públicos de comunicaciones y transportes cubra las necesidades de los usuarios en las mejores condiciones de oportunidad, calidad y operación, mediante el desarrollo de infraestructura.
 </p>
- <a href="https://www.gob.mx/sct/es/archivo/acciones_y_programas"> </a>
+   <a
+          href="https://www.gob.mx/sct/es/archivo/acciones_y_programas"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Acciones y programas - Secretaría"
+        > </a>
 
         <div className="home-image-container">
           <img
