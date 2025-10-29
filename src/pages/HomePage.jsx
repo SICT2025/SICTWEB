@@ -12,7 +12,6 @@ function HomePage() {
         </h1>
         <hr className="home-divider" />
         <p className="home-description">
-          ¿Qué hacemos?
 MISIÓN:
 Instrumentar políticas públicas que impulsen el desarrollo económico, nacional y regional, mediante la expansión de infraestructura eficiente, sustentable, segura, incluyente y resiliente, así como la ampliación de la cobertura y mejora constante de la calidad, operación y oportunidad de los servicios de comunicaciones y transportes en beneficio de la población.
 VISIÓN:
