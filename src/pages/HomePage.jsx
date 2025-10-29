@@ -14,9 +14,9 @@ function HomePage() {
         <p className="home-description">
 MISIÓN:
 Instrumentar políticas públicas que impulsen el desarrollo económico, nacional y regional, mediante la expansión de infraestructura eficiente, sustentable, segura, incluyente y resiliente, así como la ampliación de la cobertura y mejora constante de la calidad, operación y oportunidad de los servicios de comunicaciones y transportes en beneficio de la población.
-VISIÓN:
+<br> VISIÓN:
 Ser una Secretaría que genera las condiciones para que la prestación de servicios públicos de comunicaciones y transportes cubra las necesidades de los usuarios en las mejores condiciones de oportunidad, calidad y operación, mediante el desarrollo de infraestructura.
-
+</br>
 https://www.gob.mx/sct/es/archivo/acciones_y_programas
 
         </p>  
