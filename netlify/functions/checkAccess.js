@@ -16,7 +16,6 @@ function ipToInt(ip) {
 }
  
 function cidrMatch(ip, cidr) {
-  // cidr: "198.51.100.0/24"
   if (!cidr.includes('/')) return ip === cidr;
   const [net, prefix] = cidr.split('/');
   const ipInt = ipToInt(ip);
