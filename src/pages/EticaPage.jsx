@@ -9,6 +9,7 @@ function EticaPage() {
             url: 'https://drive.google.com/drive/folders/1-QDK7sX0XVEk-KZaDK_5E6pPj5VqxzsI?usp=sharing',
             descripcion: 'Contiene el Código de Ética de la Secretaría de la Función Pública (SFP) actualizado al año 2022. Establece los principios, valores y reglas de conducta para los servidores públicos.'
         },
+       
     ];
 
     const archivo = [
@@ -17,6 +18,10 @@ function EticaPage() {
             url: 'https://drive.google.com/drive/folders/1OjpP_51yu_EU5x_04eN803rQT0R_z5Bu?usp=sharing',
             descripcion: 'Documento oficial que describe la política institucional para promover la igualdad laboral y prevenir cualquier tipo de discriminación.'
         },
+         {
+            nombre: 'Manual de Comunicación NO Sexista',
+            url: 'https://drive.google.com/drive/folders/1PmCjBCnnOSp35h9fzTMML9TumJY2exuh?usp=sharing',
+        }
     ];
 
     // Carrusel de imágenes
