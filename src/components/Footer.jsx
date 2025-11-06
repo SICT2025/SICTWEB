@@ -4,9 +4,7 @@ import escudo from '../assets/imagenes/escudo-gob.png';
 import footerPattern from '../assets/imagenes/escudogob.png'; // Asegúrate de que la ruta sea correcta
 
 function Footer() {
-  /**
-   * Componente Footer que muestra información institucional, contacto y un patrón decorativo.
-   */
+
   return (
     <footer className="footer-gob">
       <div className="footer-content">
@@ -36,7 +34,7 @@ function Footer() {
           <div className="footer-social"></div>
         </div>
       </div>
-      {/* Patrón decorativo personalizado */}
+      {/* footer */}
       <div
         className="footer-pattern"
         style={{
