@@ -7,7 +7,6 @@ const EncuestaGenero = () => {
     e.preventDefault();
     const genero = e.target.genero.value;
 
-    // Enviar evento personalizado a Google Analytics
     if (window.gtag) {
       window.gtag("event", "encuesta_genero", {
         respuesta: genero,
