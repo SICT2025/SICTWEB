@@ -1,7 +1,3 @@
-// netlify/functions/checkAccess.js
-// Verifica si la IP del visitante está permitida (soporte para IPv4 CIDR).
-// EDITA allowedList con las IPs o CIDRs de tu oficina.
- 
 const allowedList = [
   "187.218.62.217", 
   "189.162.219.242", 
@@ -27,16 +23,13 @@ function cidrMatch(ip, cidr) {
 }
  
 function extractClientIP(headers) {
-  // x-forwarded-for puede contener lista: "client, proxy1, proxy2"
   const xff = headers['x-forwarded-for'] || headers['X-Forwarded-For'] || headers['x-nf-client-connection-ip'] || headers['client-ip'] || headers['cf-connecting-ip'];
   if (!xff) return null;
   const first = xff.split(',')[0].trim();
-  // Si es IPv6 con IPv4 mapeada, intentar extraer IPv4
   if (first.includes(':') && first.includes('.')) {
     const m = first.match(/(\d+\.\d+\.\d+\.\d+)/);
     if (m) return m[1];
   }
-  // devolver tal cual
   return first;
 }
  
@@ -46,16 +39,13 @@ exports.handler = async (event) => {
     const clientIP = extractClientIP(headers);
  
     if (!clientIP) {
-      // no se pudo detectar IP; por seguridad, negar
       return {
         statusCode: 403,
         headers: { "Content-Type": "text/html; charset=utf-8" },
         body: `<h1>Acceso restringido</h1><p>No se pudo verificar su ubicación.</p>`
       };
     }
- 
-    // Solo soportamos IPv4 en esta función (si necesitas IPv6, te doy otra versión)
-    if (!/^\d+\.\d+\.\d+\.\d+$/.test(clientIP)) {
+     if (!/^\d+\.\d+\.\d+\.\d+$/.test(clientIP)) {
       return {
         statusCode: 403,
         headers: { "Content-Type": "text/html; charset=utf-8" },
