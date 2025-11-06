@@ -12,7 +12,6 @@ function AccessibilityToggle() {
 
   const handleMouseLeave = () => {
     setHovering(false);
-    // No cerramos aquí automáticamente
   };
 
   const handleButtonClick = () => {
@@ -20,7 +19,7 @@ function AccessibilityToggle() {
   };
 
   const handleActionSelected = () => {
-    setOpen(false); // Cierra el menú al seleccionar una opción
+    setOpen(false); 
   };
 
   return (
