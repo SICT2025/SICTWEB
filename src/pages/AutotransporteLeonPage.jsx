@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/styles/pages/RecursosFinancierosPage.css'; // Puedes reutilizar el CSS
+import '../assets/styles/pages/RecursosFinancierosPage.css'; 
 
 function AutotransporteLeonPage() {
   return (
