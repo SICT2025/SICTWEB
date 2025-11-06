@@ -75,7 +75,7 @@ function SubTransporte() {
           ))}
         </div>
 
-        {/* ...resto del contenido original... */}
+        {/* contenido  */}
         <h3>
           El licenciado a cargo es responsable de que los permisos o trámites sean aceptados,
           principalmente los relacionados con licencias federales para conductores.
