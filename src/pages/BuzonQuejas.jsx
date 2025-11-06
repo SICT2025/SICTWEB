@@ -11,12 +11,10 @@ export default function BuzonQuejas() {
   const [folio, setFolio] = useState(null);
   const [mensaje, setMensaje] = useState('');
 
-  // --- NUEVO: comentarios (como mural)
   const [comentarios, setComentarios] = useState([]);
   const [nuevoComentario, setNuevoComentario] = useState('');
   const API_URL = 'https://script.google.com/macros/s/AKfycbzQnFkuwqYrluZ1LP0hTaC7T5Dz8pM1NKB4YyTEDXSHzV88sfNDwx2sEkjV3vr0myxMLg/exec'; // Pega aquí la URL del script de Google Sheets
 
-  // Cargar comentarios desde Google Sheets
   useEffect(() => {
     fetch(API_URL)
       .then(res => res.json())
@@ -24,7 +22,6 @@ export default function BuzonQuejas() {
       .catch(err => console.error('Error al cargar comentarios:', err));
   }, []);
 
-  // Enviar nuevo comentario
   const handleComentarioSubmit = (e) => {
     e.preventDefault();
     if (nuevoComentario.trim() === '') return;
@@ -45,7 +42,6 @@ export default function BuzonQuejas() {
       .catch(err => console.error('Error al guardar comentario:', err));
   };
 
-  // Formulario de quejas (igual que antes)
   const handleSubmit = async (e) => {
     e.preventDefault();
     setEnviando(true);
@@ -77,7 +73,6 @@ export default function BuzonQuejas() {
     setEnviando(false);
   };
 
-  // Descargar PDF de folio
   const handleDescargarPDF = () => {
     if (!folio) return;
 
@@ -223,7 +218,7 @@ export default function BuzonQuejas() {
         </form>
       </div>
 
-      {/* --- NUEVA SECCIÓN DE COMENTARIOS --- */}
+      {/* COMENTARIOS  */}
       <div className="comentarios-section" style={{ marginTop: 50 }}>
         <h2>Sugerencias</h2>
         <form onSubmit={handleComentarioSubmit} className="comentarios-form">
