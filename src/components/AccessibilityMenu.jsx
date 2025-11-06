@@ -17,7 +17,6 @@ function AccessibilityMenu({ onAction }) {
     resetAll
   } = useAccessibility();
 
-  // Función auxiliar para ejecutar acción y cerrar el menú
   const handleClick = (fn) => {
     fn();
     if (onAction) onAction();
