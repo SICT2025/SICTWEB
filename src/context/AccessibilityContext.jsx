@@ -15,15 +15,12 @@ export function AccessibilityProvider({ children }) {
   const [readingMask, setReadingMask] = useState(false);
   const [readingGuide, setReadingGuide] = useState(false);
  
-  // Estado para el tamaño de fuente global (rem)
-  const [fontSize, setFontSize] = useState(1); // 1 = 100%
+  const [fontSize, setFontSize] = useState(1); 
  
-  // Cambia el tamaño de fuente del elemento root (html) para que rem funcione
   useEffect(() => {
     document.documentElement.style.fontSize = `${fontSize * 100}%`;
   }, [fontSize]);
  
-  // Aplica o remueve clases CSS en el body según los estados de accesibilidad
   useEffect(() => {
     const classList = document.body.classList;
     grayscale ? classList.add('grayscale') : classList.remove('grayscale');
