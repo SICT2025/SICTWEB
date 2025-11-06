@@ -8,7 +8,6 @@ function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
-  // Detecta si estamos en móvil
   useEffect(() => {
     const checkIfMobile = () => {
       setIsMobile(window.innerWidth <= 767);
@@ -22,7 +21,6 @@ function Navbar() {
     };
   }, []);
 
-  // Cierra el menú al cambiar de ruta
   useEffect(() => {
     setMobileMenuOpen(false);
     setOpenDropdown(false);
@@ -42,7 +40,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        {/* Botón hamburguesa solo en móviles */}
+        {/* Botón */}
         <button 
           className="navbar-toggle" 
           onClick={toggleMobileMenu}
