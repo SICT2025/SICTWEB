@@ -4,17 +4,15 @@ import '../assets/styles/pages/MuralInteractivoPage.css';
 function MuralInteractivoPage() {
   const [comentarios, setComentarios] = useState([]);
   const [mensaje, setMensaje] = useState('');
-  const API_URL = "https://script.google.com/macros/s/AKfycbwEEu41ku3ZAnD9CmVLqbslT17Axpb6YmZ5GeDp0vHHSx6FyvsySllkq10AXUpMQ0Nu/exec"; // pega aquí la URL del Apps Script
+  const API_URL = "https://script.google.com/macros/s/AKfycbwEEu41ku3ZAnD9CmVLqbslT17Axpb6YmZ5GeDp0vHHSx6FyvsySllkq10AXUpMQ0Nu/exec"; 
 
-  // Cargar comentarios de Google Sheets
   useEffect(() => {
     fetch(API_URL)
       .then(res => res.json())
-      .then(data => setComentarios(data.reverse())) // mostrar más recientes arriba
+      .then(data => setComentarios(data.reverse())) 
       .catch(err => console.error("Error al cargar comentarios:", err));
   }, []);
 
-  // Enviar nuevo comentario
   const handleSubmit = (e) => {
     e.preventDefault();
     if (mensaje.trim() === '') return;
