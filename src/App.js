@@ -28,7 +28,6 @@ import ReadingGuide from './components/ReadingGuide';
 import ModalEncuestaGenero from './components/ModalEncuestaGenero';
 import DireccionGeneral from './pages/DireccionGeneralPage';
  
-// Inicializa Google Analytics solo en producción
 const initGA = () => {
   if (process.env.NODE_ENV === 'production') {
     if (!window.gtag) {
@@ -42,7 +41,6 @@ const initGA = () => {
   }
 };
  
-// Custom hook para registrar page views SPA (usa useLocation internamente)
 function usePageViews() {
   const location = useLocation();
  
@@ -59,14 +57,11 @@ function usePageViews() {
 function AppContent() {
   const { readingMask, readingGuide } = useAccessibility();
  
-  // Llamada al custom hook — debe ejecutarse dentro de un componente que esté dentro de <Router>
   usePageViews();
  
-  // --- Moved hooks inside the component (fix ESLint errors) ---
   const [showEncuesta, setShowEncuesta] = useState(false);
  
   useEffect(() => {
-    // Mostrar encuesta/modal al montar (ajusta la lógica si quieres mostrarlo condicionalmente)
     setShowEncuesta(true);
   }, []);
   // ---------------------------------------------------------
@@ -122,7 +117,7 @@ function AppContent() {
           <Route path="/comite-etica" element={<ComiteEtica />} />
         </Routes>
  
-        {/* Modal de encuesta: paso onClose para poder ocultarlo */}
+        {/* Modal  */}
         <ModalEncuestaGenero
           open={showEncuesta}
           show={showEncuesta}
@@ -136,9 +131,8 @@ function AppContent() {
  
 function App() {
   useEffect(() => {
-    initGA(); // Inicializa GA solo en producción
+    initGA(); 
  
-    // Contador de visitas local (funciona en localhost y producción)
     const visitCount = localStorage.getItem('sictt-visit-count');
     const currentCount = visitCount ? parseInt(visitCount, 10) : 0;
     const newCount = currentCount + 1;
