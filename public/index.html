@@ -7,8 +7,6 @@
 
   <link rel="shortcut icon" type="image/x-icon" href="%PUBLIC_URL%/imagenes/icono.jpg" />
   <title>SICT-GTO</title>
-
-  <!-- 🔒 Protección por IP -->
   <style id="block-style">#root{display:none !important;}</style>
   <script>
     (async function() {
@@ -17,11 +15,9 @@
         const data = await res.json();
 
         if (data.allowed) {
-          // ✅ IP permitida → muestra la app React
           const styleTag = document.getElementById("block-style");
           if (styleTag) styleTag.remove();
         } else {
-          // 🚫 IP bloqueada → reemplaza el contenido
           document.body.innerHTML = `
             <div style="
               display:flex;
@@ -64,9 +60,7 @@
       }
     })();
   </script>
-  <!-- 🔒 Fin protección por IP -->
 
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HXPVCHG0F2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
